@@ -1,0 +1,166 @@
+What are the softwares are required to learn Full Stack Python develoment.
+
+->Python 3.7.0
+->IDET(Intigrated developement environment tool )  -->Visual studio code,Pycharm,Jyputer,Subline text
+# Features of Python
+
+
+# 1) Easy to use / Smooth Learning curve
+# 2) Interpreted lang
+# 3) Open-source
+# 4) Dynamic Typing
+# 5) Large community
+# 6) Standard Libraries
+# 7) High-level Lang
+# 8) Case-sensitive
+
+->print()
+->id()
+->type()
+
+
+How can we save a python file:
+==============================
+We can save a python file with .py extension with any_name.
+
+Ex1:
+====
+index1.py
+or
+test1.py
+
+12345.py ---->Invalid file_name 
+
+demo test.py ---->Invalid file_name
+
+
+->print():
+=========
+It is a predefine function in python.The main objective of print() function is to 
+display the content on the console or application console with '' or "" or '''''' or
+"""""" or variable_name(an indetifier).
+
+Ex1:
+===
+print('Welcome to IHUB for Python')
+print("Welcome to IHUB for Python")
+print('''Welcome to IHUB for python''')
+print("""Welcome to IHUB for python""")
+age=21 
+print(age)
+
+
+OUTPUT:
+======
+Welcome to IHUB for Python
+Welcome to IHUB for Python
+Welcome to IHUB for python
+Welcome to IHUB for python
+21
+
+C:\Users\Admin\Desktop\Python_classes>python index1.py
+Welcome to IHUB for Python
+Welcome to IHUB for Python
+Welcome to IHUB for python
+Welcome to IHUB for python
+21
+
+C:\Users\Admin\Desktop\Python_classes>py index1.py
+Welcome to IHUB for Python
+Welcome to IHUB for Python
+Welcome to IHUB for python
+Welcome to IHUB for python
+21
+
+C:\Users\Admin\Desktop\Python_classes>
+
+
+Ex2:
+====
+
+print('Welcome to IHUB for Python')
+print()
+print("Welcome to IHUB for Python")
+print()
+print('''Welcome to IHUB for python''')
+print()
+print("""Welcome to IHUB for python""")
+print()
+age=21 
+print(age)
+print()
+print("End of an application")
+
+
+Ex3:
+===
+import time
+print('Welcome to IHUB for Python')
+print()
+print("Welcome to IHUB for Python")
+print()
+print('''Welcome to IHUB for python''')
+print()
+print("""Welcome to IHUB for python""")
+print()
+age=21 
+print(age)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time
+print('Welcome to IHUB for Python')
+print()
+print("Welcome to IHUB for Python")
+Print()
+print('''Welcome to IHUB for python''')
+print()
+print("""Welcome to IHUB for python""")
+print()
+age=21 
+print(age)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+Welcome to IHUB for Python
+
+Welcome to IHUB for Python
+Traceback (most recent call last):
+  File "index1.py", line 5, in <module>
+    Print()
+NameError: name 'Print' is not defined
+
+
+->id():
+======
+It is a predefine function in python.The main objective of id() function is to display the 
+address of a variable or an identiifeir where our value is stored at memory allocation.
+
+
+Ex1:
+===
+import time 
+age=21 
+print(age)
+print()
+print(id(age))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+
+
+
+
+
+
