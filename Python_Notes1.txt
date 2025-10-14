@@ -1,0 +1,8440 @@
+# Features of Python
+
+
+# 1) Easy to use / Smooth Learning curve
+# 2) Interpreted lang
+# 3) Open-source
+# 4) Dynamic Typing
+# 5) Large community
+# 6) Standard Libraries
+# 7) High-level Lang
+# 8) Case-sensitive
+Statements and Comments
+print('Hello world')   #### run by pressing shift+enter key
+Hello world
+#### line continuation character
+print('Hello dfbkdkjfdslgbvkdflj\
+dfbkfdljvdfnbldfjlfejlddlvdflknldfnkjnvbk\
+dfnklvdfnlkvnkushlvshuvslvsdvbkjdfhvdflvdkufvuh\
+dukbhkudhbkudhbkudhukbfdhhdbdhhfkudhdhflworld')
+Hello dfbkdkjfdslgbvkdfljdfbkfdljvdfnbldfjlfejlddlvdflknldfnkjnvbkdfnklvdfnlkvnkushlvshuvslvsdvbkjdfhvdflvdkufvuhdukbhkudhbkudhbkudhukbfdhhdbdhhfkudhdhflworld
+###  place the cursor + blackslash + enter key
+print('hello \
+world')
+hello world
+ 
+(1+2+3+4+5+6+7+8+9+\
+1+2+3+4+5+6+7+8+9+\
+1+2+3+4+5+6+7+8+9+\
+1+2+3+4+5+6+7+8+9)
+180
+[1+2+3+4+5+6+7+8+9+
+1+2+3+4+5+6+7+8+9+
+1+2+3+4+5+6+7+8+9+
+1+2+3+4+5+6+7+8+9]
+[180]
+{1+2+3+4+5+6+7+8+9+
+1+2+3+4+5+6+7+8+9+
+1+2+3+4+5+6+7+8+9+
+1+2+3+4+5+6+7+8+9}
+{180}
+ 
+# Comments
+# this is a comment
+# print('hello world')
+print('hello')    #### this code prints hello 
+hello
+print('hello')
+print('hello1')
+print('hello2')
+print('hello3')
+hello
+hello1
+hello2
+hello3
+ 
+ 
+Identifiers/variable & keywords
+# name given to any entity in Python is identifier
+roll_no = 12
+
+name = 'Raj'
+
+age =10
+# variable >> roll_no, name, age
+print(name)
+Raj
+print('Raj')
+Raj
+ 
+print = 1
+print('raj')  ### >>> 1('raj') 
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-66-2371febfde80> in <module>
+----> 1 print('raj')
+
+TypeError: 'int' object is not callable
+del print
+print('raj')
+raj
+roll_no
+12
+del roll_no
+roll_no
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-71-11b6a24ea9b5> in <module>
+----> 1 roll_no
+
+NameError: name 'roll_no' is not defined
+#NEVER USE BELOW KEYWORDS AS VARIABLE NAME
+
+# False	await	else	import	pass
+# None	break	except	in	raise
+# True	class	finally	is	return
+# and	continue	for	lambda	try
+# as	def	from	nonlocal	while
+# assert	del	global	not	with
+# async	elif	if	or	yield
+ 
+ 
+#### Nomenclature of varibale
+# 1) case sensitive - 
+
+name = 'raj'
+Name = 'Raj'
+name
+'raj'
+Name
+'Raj'
+# 2) Combination of lower and upper case and number
+
+Name1 = 'raj'
+# 3) Should not have a special character in it
+
+name@1 = 'raj'
+  File "<ipython-input-81-40375d63cce4>", line 3
+    name@1 = 'raj'
+    ^
+SyntaxError: cannot assign to operator
+ 
+# 4) Should not start with a number 
+
+1name = 'raj'
+  File "<ipython-input-82-42297222bec8>", line 3
+    1name = 'raj'
+     ^
+SyntaxError: invalid syntax
+ 
+_name1_ = 'raj'
+_1name_2 = 'jatin'
+_name!_ = 'raj'
+  File "<ipython-input-85-841ec16b7c85>", line 1
+    _name!_ = 'raj'
+         ^
+SyntaxError: invalid syntax
+_1_rajat = 'rajat'
+ 
+ ========================================================================================================================================================
+Data types in python:
+=====================
+
+What are the data types?
+-----------------------
+Data types are used store different types of information at memory allocation.Following 
+data types are supported in python.
+
+
+->Integer data type
+->Floating data type
+->Boolean data type
+->String data type
+->Complex data type
+->List data type
+->Tuple data type
+->Set data type
+->Dict data type
+->Bytes data type
+->Bytearray data type
+->frozenset data type
+->range data type
+->None data type
+
+
+->Integer data type:
+===================
+Python supports integer data type.It can be represent as number or decimal number 
+from 0-9.It may be either + number of - number with any length.
+
+
+Ex1:
+===
+import time 
+X1=1600 
+print("The value of X1 is:",X1)
+print()
+print("The address is:",id(X1))
+print()
+print("The data type is:",type(X1))
+print()
+X2=-1900 
+print("The value of X2  is:",X2)
+print()
+print("The address is:",id(X2))
+print()
+print("The data type is:",type(X2))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->Floating data type:
+===================
+Python supports floating data type.It can be represent as decimal point number or
+floating point number.It is may be either + number or - number.In python 1.3e is
+also consider as floating data type.
+
+
+Ex1:
+===
+import time 
+X1=123.67 
+print("The value of X1 is:",X1)
+print()
+print("The address is:",id(X1))
+print()
+print("The data type is:",type(X1))
+print()
+X2=-156.78 
+print("The value is:",X2)
+print()
+print("The address is:",id(X2))
+print()
+print("The data type is:",type(X2))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Ex2:
+===
+import time 
+X1=1.3e 
+print("The value is:",X1)
+print()
+print("The address is:",id(X1))
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+X1=1.3*10*10
+print("The value is:",X1)
+print()
+print("The address is:",id(X1))
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+X1=1.3e2
+print("The value is:",X1)
+print()
+print("The address is:",id(X1))
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex5:
+====
+import time 
+X1=1.3e3
+print("The value is:",X1)
+print()
+print("The address is:",id(X1))
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print('End of an application')
+
+
+->Boolean data type:
+===================
+Python supports boolean data type.The main objective of boolean data type is to return 
+boolean values eithet True or False after checking the condition.
+
+
+Ex1:
+====
+import time 
+X1=150 
+X2=170 
+print()
+print("----Using boolean data type----")
+print(X1)
+print()
+print(X2)
+print()
+res1=X1==X2 
+print("The result is:",res1)
+print()
+print("The data type is:",type(res1))
+print()
+res2=X1!=X2 
+print("The result is:",res2)
+print()
+print("The data type is:",type(res2))
+print("-----------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+->String data type:
+==================
+Python supports string data type.
+
+
+What is String?
+--------------
+->String can be represent as set of characters or sequence of characters enclosed with 
+'' or "" or '''''' or """""".
+
+->While working with string data type space is also consider as a one character.
+
+->Python supports + positive index with starts from 0 and ends with end-1.It is also known as
+forward direction.
+
+
+->Python also supports - negative index with starts from -1 to end+1.It is also known as 
+backward direction.
+
+->'''''' or """""" is also used for multiline content purpose.
+
+
+Ex1:
+====
+import time 
+str1='Core Python'
+str2="Advance Python"
+str3='''Django with Rest_Framework'''
+str4="""Flask with Flask_restful Framework"""
+str5='120'
+str6="125.67"
+print(str1,str2,str3,str4,str5,str6)
+print()
+print(type(str1),type(str2),type(str3),type(str4),type(str5),type(str6))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+I will be a 'django developer' after end of this python course
+
+
+Ex2:
+===
+import time 
+str1="I will be a 'django developer' after end of this python course"
+str2='''I will be a 'django developer' after end of this python course'''
+str3="""I will be a 'django developer' after end of this python course"""
+print()
+print(str1)
+print(type(str1))
+print()
+print(str2)
+print(type(str2))
+print()
+print(str3)
+print()
+print(type(str3))
+print()
+time.sleep(2)
+print("End of an application")
+
+I will be a 'django developer' after end of this "python" course
+
+
+Ex1:
+===
+import time 
+str1='''I will be a 'django developer' after end of this "python" course'''
+str2="""I will be a 'django developer' after end of this "python" course"""
+print()
+print(str1)
+print()
+print(type(str1))
+print()
+print(str2)
+print()
+print(type(str2))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+str1='I will be a 'django developer' after end of this "python" course'
+str2="I will be a 'django developer' after end of this "python" course"
+print()
+print(str1)
+print()
+print(type(str1))
+print()
+print(str2)
+print()
+print(type(str2))
+print()
+time.sleep(2)
+print("End of an application")
+
+I will be a '''django developer''' after end of this python course
+
+
+Ex1:
+===
+import time 
+str1="I will be a '''django developer''' after end of this python course"
+print(str1)
+print()
+print(type(str1))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Hi guys good morning
+Hope you are getting the concept
+Thank you
+
+
+Ex1:
+===
+import time 
+str1='''Hi guys good morning
+Hope you are getting the concept
+Thank you''' 
+print()
+print(str1)
+print()
+print(type(str1))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+str1="""Hi guys good morning
+Hope you are getting the concept
+Thank you"""
+print()
+print(str1)
+print()
+print(type(str1))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+====
+import time 
+str1='Hi guys good morning
+Hope you are getting the concept
+Thank you'
+print()
+print(str1)
+print()
+print(type(str1))
+print()
+time.sleep(2)
+print("End of an application")
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+str1 = 'name1'
+str2 = "John's"
+str2
+"John's"
+str3 = 'he "tries" to be wise'
+str3
+'he "tries" to be wise'
+str4 = """john's burgers are the "best" """    #### document interlude
+str4
+'john\'s burgers are the "best" '
+add = """hno - 31
+street - 34
+area - urban"""
+print(add)
+hno - 31
+street - 34
+area - urban
+ 
+Data Types/Structures
+# int  - integer - 1,2,3,-1,-2,-3 etc 
+# string - 'hi' , 'name1'
+# float - decimal 1.2, 1.31
+# list - []
+# tuple - ()
+# dictionary - { : }
+# set - {}
+INT
+int1 = 1 
+int2 = 3
+num1 = 1
+id(int1)
+4327410016
+id(num1)
+4327410016
+id(int2)
+4327410080
+ 
+Operators
+#### assignment operators
+int1 = 1
+num2 = 3
+roll_no = 34
+#### Arithmetic operators
+int1+int2
+4
+int2-int1
+2
+int1*int2
+3
+int1/int2
+0.3333333333333333
+int1//int2   #### floor division
+0
+10/3
+3.3333333333333335
+10//3
+3
+# ceil division
+
+import math
+math.ceil(10/3)
+4
+10**3
+1000
+10%3   #### remainder
+1
+ 
+#### Comparison Operators   #### results into Boolean output(True & False)
+int2 > int1
+True
+int1 > int2
+False
+int2 >= int1
+True
+int2 <= int2
+True
+int1 == int2
+False
+int1 != int2
+True
+ 
+a = 1
+a = a + 1
+print(a)
+2
+a = a**a + a+1
+a
+7
+a = a+1
+a += 1
+a
+9
+a +=1
+a
+10
+a -= 10  ### a = a-10
+a
+0
+a = 1
+a *= 3  ### a = a*3
+a
+3
+a /= 2
+a
+1.5
+a = 10
+a - 3
+7
+a -=3
+a
+7
+ 
+membership operators
+'hi' in 'hi there'
+True
+'Hey' in 'hey there'
+False
+'Hey' not in 'hey there'
+True
+ 
+' ' in ['a', 'b','c', ' f']
+False
+'f' in ['a', 'b','c', ' f']
+False
+ 
+Logical Operators
+### AND | OR | NOT
+# and  (multiplication)
+
+# True = 1
+# False = 0
+
+True and True > True
+True and False > False
+False and True >  False
+False and False > False
+book_availability = 'Yes'
+book_price = 120
+book_availability == 'Yes' and book_price<100
+False
+ 
+book_availability == 'Yes' or book_price<100
+True
+# or  (addition)
+
+# True = 1
+# False = 0
+
+True or True > True
+True or False > True
+False or True >  True
+False or False > False
+ 
+# not
+not True
+False
+not False
+True
+not 0
+True
+not 1
+False
+not 2
+False
+not 9
+False
+not -1
+False
+## only 0 is False
+data = False
+if not data:
+    print('dont start processing')
+dont start processing
+ ======================================================================================
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("----Using + direction---")
+print(str1[5])
+print(str1[6])
+print(str1[7])
+print(str1[8])
+print(str1[9])
+
+print(str1[10])
+print('-------------------------')
+print()
+print("----Using - direction----")
+print(str1[-6])
+print(str1[-5])
+print(str1[-4])
+print(str1[-3])
+print(str1[-2])
+print(str1[-1])
+print('-------------------------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Slice operator:
+==============
+Python supports slice operator.The main objective of slice operator is to make the pieces of
+string object as per the application reqn.Slice operator is applicable for + direction and - 
+direction as well.Following are syntax for slice operator
+
+
+str1[begin:end(end-1):step]
+
+Slice operator with + direction:
+================================
+
+Form1:
+-----
+str1[begin:]
+
+Here end(end-1)and step value is optional.The output of the string would be
+from given position to till end of the string.
+
+str1[5:]
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form1----')
+print(str1[5:])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form1----')
+print(str1[0:])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Form2:
+=====
+str1[:end(end-1)]
+
+str1[:7]---->7-1=6
+
+Here begin and step value is optional.The output of the string from the indexing position which starting 
+from 0 to end-1 the position.
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form2----')
+print(str1[:7])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form2----')
+print(str1[:1])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form2----')
+print(str1[:9])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Form3:
+=====
+str1[begin:end(end-1)]
+
+Here step is optional.The output of the string would be from giving position to
+till end-1 the position.
+str1[2:9]
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form3----')
+print(str1[2:9])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Form4:
+======
+str1[begin:end(end-1):step]
+
+Here output will be generated based on step value.
+
+str1[2:9:1]
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form4----')
+print(str1[2:9:1])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Ex2:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form4----')
+print(str1[2:9:2])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form4----')
+print(str1[1:10:5])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Form5:
+=====
+str1[0:]
+or
+str1[:]
+or
+str1[::] ------>Complete string object
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form5----')
+print(str1[0:])
+print()
+print(str1[:])
+print()
+print(str1[::])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Ex2:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using + direction---")
+print()
+print('---Form5----')
+print(str1[1:8:0])
+print('-----------')
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+======
+Core Python
+
+<class 'str'>
+
+---Using + direction---
+
+---Form5----
+Traceback (most recent call last):
+  File "test1.py", line 10, in <module>
+    print(str1[1:8:0])
+ValueError: slice step cannot be zero
+
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print('My string object in acsending order is:',str1[0:])
+print()
+print("My string object is decending order is:",str1[::-1])
+print()
+time.sleep(2)
+print("End of an application")
+ ===================================================================================
+Slice operator with - negative direction:
+========================================
+Python supports negative direction which starts from -1 to end+1.While working 
+negative direction our step value must be -1.
+
+str1[-1:-7:-1] ----> -7+1= -6
+
+
+Ex1:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using - direction---")
+print(str1[-1:-7:-1])
+print("------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using - direction---")
+print(str1[-1:-7:-3])
+print("------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using - direction---")
+print(str1[-1:-7:1])
+print("------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using - direction---")
+print(str1[-1:-7:0])
+print("------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex5:
+===
+import time 
+str1="Core Python"
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using - direction---")
+print(str1[-1:-7:])
+print("------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+
+
+Task_One:
+==========
+My String object is:"Software developer
+
+a)Develop 5 meaning_ful use_cases + direction
+b)Develop meaning_ful use_cases - direction
+
+
+Complex data type:
+================
+Python supports complex data type.The main objective of complex data type is to perform 
+some complex operations in our application.We can define or declare complex data type
+as 100+500j or -100-500j.It may be either + complex data type or  - negative complex data
+type.
+
+
+X1=100+500j 
+100 ---real part ---->X1.real ---->100.0
+
+500 --->Imginary part --->X1.img --->500.0
+
+
+Ex1:
+===
+import time 
+X1=100+500j 
+print("The complex object is:",X1)
+print()
+print("The data type is:",type(X1))
+print()
+X2=-300-500j 
+print("The complex object is:",X2)
+print()
+print("The data type is:",type(X2))
+print()s
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+X1=100+500j 
+print("The complex object is:",X1)
+print()
+print("The data type is:",type(X1))
+print()
+print("---Real part from complex object---")
+print(X1.real)
+print("-------------------------------")
+print()
+print("---Imaginary part from complex data type----")
+print(X1.imag)
+print("-----------------------------------")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+X1=500j 
+print("The complex value is:",X1)
+print()
+print("Real part is:",X1.real)
+print()
+print("Imaginary part is:",X1.imag)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time 
+X1=500j+1000
+print("The complex value is:",X1)
+print()
+print("Real part is:",X1.real)
+print()
+print("Imaginary part is:",X1.imag)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex5:
+===
+import time
+X1=1000+200j
+X2=-900-50j
+res1=X1+X2 
+print("The result is:",res1) 
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Invalid_Case for complex data type with only real part:
+=====================================================
+Ex1:
+==
+import time 
+X1="IHUB_1"+5000j 
+print("The complex value is:",X1)
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+X1=123.45+'Truej'
+print("The complex value is:",X1)
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+X1=123.45+'Pythonj'
+print("The complex value is:",X1)
+print()
+print("The data type is:",type(X1))
+print()
+time.sleep(2)
+print("End of an application")
+======================================================================================
+Specail type of operators in python
+=============================
+Python supports specail type of operators.Following are the specail type operators 
+in python.
+
+->Identity operators
+->Membership operators
+
+
+->Identity operators:
+====================
+It is a specail type of operators in python.The main objective of 
+identity operators is meant for address comparsion.Following are the
+identity operators in python
+
+->is
+->is not
+
+Note:Identity operators return boolean values either True or False
+
+
+Ex1:
+===
+import time 
+list_one=[120,130,140,150,160,170]
+list_two=[120,130,140,150,160,170]
+print()
+print("---List objects---")
+print(list_one,list_two)
+print("-----------------")
+print()
+print("---Addresses---")
+print(id(list_one),id(list_two))
+print("-------------------")
+print()
+print("---Using identity operators---")
+print("The result is:",list_one is list_two)
+print()
+print("The data type is:",type(list_one is list_two))
+print()
+print("The result is:",list_one is not list_two)
+print()
+print("The data type is:",type(list_one is not list_two))
+print("------------------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+list_one=1000
+list_two=1000
+print()
+print("---Int objects---")
+print(list_one,list_two)
+print("-----------------")
+print()
+print("---Addresses---")
+print(id(list_one),id(list_two))
+print("-------------------")
+print()
+print("---Using identity operators---")
+print("The result is:",list_one is list_two)
+print()
+print("The data type is:",type(list_one is list_two))
+print()
+print("The result is:",list_one is not list_two)
+print()
+print("The data type is:",type(list_one is not list_two))
+print("------------------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+====
+import time 
+list_one=(100,200,300,400,500)
+list_two=(100,200,300,400,500)
+print()
+print("---Tuple objects---")
+print(list_one,list_two)
+print("-----------------")
+print()
+print("---Addresses---")
+print(id(list_one),id(list_two))
+print("-------------------")
+print()
+print("---Using identity operators---")
+print("The result is:",list_one is list_two)
+print()
+print("The data type is:",type(list_one is list_two))
+print()
+print("The result is:",list_one is not list_two)
+print()
+print("The data type is:",type(list_one is not list_two))
+print("------------------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex3:
+===
+import time 
+list_one=(chr(65),chr(66),chr(67))
+list_two=(chr(65),chr(66),chr(67))
+print()
+print("---tuple objects---")
+print(list_one,list_two)
+print("-----------------")
+print()
+print("---Addresses---")
+print(id(list_one),id(list_two))
+print("-------------------")
+print()
+print("---Using identity operators---")
+print("The result is:",list_one is list_two)
+print()
+print("The data type is:",type(list_one is list_two))
+print()
+print("The result is:",list_one is not list_two)
+print()
+print("The data type is:",type(list_one is not list_two))
+print("------------------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex4:
+===
+import time 
+t1=(1,2,3,4,5,6)
+t2=(10,130,140,150,160)
+print()
+print("---tuple objects---")
+print(t1,t2)
+print("-----------------")
+print()
+print("---Addresses---")
+print(id(t1),id(t2))
+print("-------------------")
+print()
+print("---Using identity operators---")
+print("The result is:",t1 is t2)
+print()
+print("The data type is:",type(t1 is t2))
+print()
+print("The result is:",t1 is not t2)
+print()
+print("The data type is:",type(t1 is not t2))
+print("------------------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex5:
+===
+import time 
+t2=12000
+t2=13000
+t2=14000
+print()
+print("---Integer objects---")
+print(t2,t2)
+print("-----------------")
+print()
+print("---Addresses---")
+print(id(t2),id(t2))
+print("-------------------")
+print()
+print("---Using identity operators---")
+print("The result is:",t2 is t2)
+print()
+print("The data type is:",type(t2 is t2))
+print()
+print("The result is:",t2 is not t2)
+print()
+print("The data type is:",type(t2 is not t2))
+print("------------------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Q1)What is the  difference between ==(Euality operators) and is operator(Identity operator)
+
+== operator is meant for content comparision and is operator is meant for
+address comparision.
+
+
+Ex1:
+===
+import time 
+list_one=['A','B','C']
+list_two=['A','B','C']
+print()
+print("----Values---")
+print(list_one,list_two)
+print("----------------")
+print()
+print("---addresses---")
+print(id(list_one),id(list_two))
+print("------------------------")
+print()
+print("---Using Identity operators---")
+print("The result is:",list_one is list_two)
+print("-------------------------------------")
+print()
+print("---Using == operator ----")
+print("The result is:",list_one==list_two)
+
+===========================================================================================
+Membership operator:
+==================
+Python supports memebership operators.The main objective of membership operators
+is to search a character or group of characters with in python object.If character 
+found return otherwise return false.Following are the membership operators in 
+python.
+
+->in 
+->not in
+
+
+Ex1:
+===
+import time 
+str1=input("Enter the python object:")  # I will be a application developer
+print(str1)
+print()
+print(type(str1))
+print()
+print("---Using membership operators---")
+print('I' in str1)
+print()
+print(' ' in str1)
+print()
+print("Django" in str1)
+print()
+print('JavaScript' not in str1)
+print()
+print("dev" in str1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+List_Year=[2007,2008,2009,2010,2011,2012]
+print(List_Year)
+print()
+print(type(List_Year))
+print()
+print("---Using membership operator----")
+print(2009 in List_Year,List_Year[2])
+print()
+print(2008 in List_Year,List_Year[1])
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ternary operator:
+===============
+->Uniary operator
+->Binary operator
+->Ternary operator
+
+->Uniary operator:
+==================
+Uniary operator can be represent as if we are using one operator with only one
+variable or an identifier then it is said to be uniary operator.
+
+
+Ex1:
+===
+import time 
+X1=True 
+print(X1)
+print()
+print(type(X1))
+print()
+X2=not X1
+print(X2)
+print()
+print(type(X2))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+True
+
+<class 'bool'>
+
+False
+
+<class 'bool'>
+
+End of an application
+
+
+->Binary operator:
+==================
+Binary operator can be represent as if we are using one operator with 
+two variables or an identifier then it is said to binary operator
+
+Ex1:
+===
+import time 
+X1=int(input("Enter the value of X1:"))
+X2=int(input("Enter the value of X2:"))
+res1=X1+X2 
+print("The Sum result is:",res1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->Ternary operator:
+==================
+Python supports Ternary operators.Ternary operator can be represent as 
+if we are using one or more than one variable with one or more than one condition
+then it is said to be ternary operator in python.
+
+a=120
+b=90
+
+max= a if a>b esle b
+
+Ex1:
+===
+import time 
+a=eval(input("Enter the value of a:"))
+b=eval(input("Enter the value of b:"))
+max=a if a>b else b 
+print("The maximum of two number is:",max)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+a=eval(input("Enter the value of a:"))
+b=eval(input("Enter the value of b:"))
+c=eval(input("Enter the value of c:"))
+max=a if a>b and a>c else b if b>c else c
+print("The maximum of three number is:",max)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+
+C:\Users\Admin\Desktop>Python test1.py
+Enter the value of a:10
+Enter the value of b:11
+Enter the value of c:12
+The maximum of three number is: 12
+
+End of an application
+
+C:\Users\Admin\Desktop>Python test1.py
+Enter the value of a:10
+Enter the value of b:12
+Enter the value of c:11
+The maximum of three number is: 12
+
+End of an application
+
+C:\Users\Admin\Desktop>Python test1.py
+Enter the value of a:12
+Enter the value of b:11
+Enter the value of c:10
+The maximum of three number is: 12
+
+End of an application
+
+C:\Users\Admin\Desktop>
+
+
+->Bitwise operators:
+===================
+Python supports bitwise operators.The main objective of bitwise operators is to perform 
+bit level operations.Following are the bitwise operators are there in python
+
+->Bitwise and operator --->& 
+->Bitwise or operator ----> |
+->Exclusive or operator ---> ^ 
+->Bitwise complement operator --->~
+->Bitwise left_shitf operator ---> <<
+->Bitwise right_shift operator ---> >>
+
+
+
+->Bitwise and operator --->&
+============================
+True ---> 1
+False ---> 0
+
+X1      X2      X1 & X2
+----------------------
+1      0          0       
+0      1          0
+1      1          1
+0      0          0
+--------------------
+
+
+->Bitwise or operator ----> |
+=============================
+
+True ---> 1
+False ---> 0
+
+X1      X2      X1 | X2
+----------------------
+1      0          1       
+0      1          1
+1      1          1
+0      0          0
+--------------------
+
+->Exclusive or operator ---> ^ 
+==============================
+True ---> 1
+False ---> 0
+
+X1      X2      X1 ^ X2
+----------------------
+1      0          1              
+0      1          1          
+1      1          0
+0      0          0          
+--------------------
+
+print(4&5)
+print(4|5)
+print(4^5)
+
+0b1010110
+or
+0B1010111
+
+4 --->  1   0  0
+5---->  1   0  1  & |  ^
+=======================
+       1   0   0  ----> 4
+       1   0   1 -----> 5
+       0   0   1 -----> 1 
+
+
+Ex1:
+===
+import time 
+print(4&5)
+print()
+print(4|5)
+print()
+print(4^5)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+print(45 & 7)
+
+45       1     0     1   1   0   1    
+7 --->   0     0     0   1   1   1  &
+=========================================== 
+        0     0      0   1   0    1  ---->  5
+==========================================
+
+
+Ex1:
+===
+import time 
+print(45 & 7)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+print((4&5)|(4&5))
+
+Ex1:
+===
+import time 
+print((4&5)|(4&5))
+print()
+time.sleep(2)
+print("End of an application")
+==============================================================================================
+# Data Structures - 
+
+# int
+# float
+# str
+# list
+# tuple
+# dict
+# set
+str1 = 'hey there, how are you today?   Thanks.'
+str2 = 'hey there'
+len(str2)   ### length of any iterable (str, list, tuple, dict, set)
+9
+len(str1)   ### inbuilt functions (we do not have to write a code for the len to work)
+39
+len([1,2,3,4])
+4
+### methods/functions of string
+str1 = 'hey there, how are you today?   Thanks.'
+str1.upper()   ### converts the string to upper()
+'HEY THERE, HOW ARE YOU TODAY?   THANKS.'
+str1.capitalize()  ### first letter capital
+'Hey there, how are you today?   thanks.'
+str1.lower()
+'hey there, how are you today?   thanks.'
+str2 = '    welcome     '
+str2.lstrip()
+'welcome     '
+str2.rstrip()
+'    welcome'
+str2.strip()
+'welcome'
+str3 = '    welcome    .   '
+str3.lstrip()
+'welcome    .   '
+str3.rstrip()
+'    welcome    .'
+str3.strip()
+'welcome    .'
+str3.replace(' ', '')
+'welcome.'
+str3.replace('.', '!')
+'    welcome    !   '
+str3.replace(' ', '').replace('.', '!')
+'welcome!'
+str3.upper().replace(' ', '').replace('.', '!')
+'WELCOME!'
+str3.count('e')
+2
+str3
+'    welcome    .   '
+str3.count('w')
+1
+str4 = '   hey there How are you?'
+str4.count('h') + str4.count('H')
+3
+str4.lower().count('h')
+3
+str4.replace('H', 'h')
+'   hey there how are you?'
+str4
+'   hey there How are you?'
+str4.replace('H', 'h').capitalize().strip()
+'hey there how are you?'
+str4.replace('H', 'h').strip().capitalize()
+'Hey there how are you?'
+str1
+'hey there, how are you today?   Thanks.'
+str1.startswith('hey')
+True
+str1.endswith('Thanks.')
+True
+str2
+'    welcome     '
+str3
+'    welcome    .   '
+str4
+'   hey there How are you?'
+str4.startswith('hey')
+False
+str4.strip().startswith('hey')
+True
+str1.swapcase()
+'HEY THERE, HOW ARE YOU TODAY?   tHANKS.'
+str2.swapcase()
+'    WELCOME     '
+str1
+'hey there, how are you today?   Thanks.'
+str1.find('e')
+1
+str1.find('there')
+4
+str1.find('howdy')
+-1
+str1.index('there')
+4
+str1.index('howdy')
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+<ipython-input-65-c94c5a401bbd> in <module>
+----> 1 str1.index('howdy')
+
+ValueError: substring not found
+ 
+str5 = 'Hello!!'
+str5.center(100, '_')
+'______________________________________________Hello!!_______________________________________________'
+len('_____________________Hello!!______________________')
+50
+str6 = '_____________________Hello!!______________________'
+str6
+'_____________________Hello!!______________________'
+username = '____________avijit_mondal___________'
+str6.strip()
+'_____________________Hello!!______________________'
+str6.replace('_', '')
+'Hello!!'
+username.replace('_', '')
+'avijitmondal'
+str6.strip('_')
+'Hello!!'
+username.strip('_')
+'avijit_mondal'
+'Hey there you account balance is - 10000'
+'Hey there you account balance is - 10000'
+'Hey there you account balance is - 11000'
+'Hey there you account balance is - 11000'
+'Hey there you account balance is - 12000'
+'Hey there you account balance is - 12000'
+# DRY - Do not repeat yourself
+frame = 'Hey there you account balance is - {}'
+frame.format(10000)
+'Hey there you account balance is - 10000'
+frame.format(11000)
+'Hey there you account balance is - 11000'
+frame.format(12000)
+'Hey there you account balance is - 12000'
+ 
+'Hey there you account balance is - {}'.format(10000)
+'Hey there you account balance is - 10000'
+'Hey there you account balance is - {}'.format(11000)
+'Hey there you account balance is - 11000'
+name = 'vijay'
+bal = 11000
+f1 =  'hey {}, your account bal is - {}'
+f1.format(name.capitalize(), bal).upper()
+'HEY VIJAY, YOUR ACCOUNT BAL IS - 11000'
+ 
+str1
+'hey there, how are you today?   Thanks.'
+str1.split()
+['hey', 'there,', 'how', 'are', 'you', 'today?', 'Thanks.']
+'heythere how are you'.split()
+['heythere', 'how', 'are', 'you']
+'hey there how are you'.split('how')
+['hey there ', ' are you']
+'192.168.0.0'.split('.')
+['192', '168', '0', '0']
+num = 192.168
+type(num)
+float
+### type casting  -- to convert one data type to other
+num
+192.168
+str(num).split('.')
+['192', '168']
+str1 = 'hey there, how are you today?   Thanks.'
+split_data = ['hey', 'there,', 'how', 'are', 'you', 'today?', 'Thanks.']
+type(split_data)
+list
+# str > list (split)
+# list > str (join)
+ 
+' '.join(split_data)
+'hey there, how are you today? Thanks.'
+ 
+split_data = ['hey', 'there,', 'how', 'are', 'you', 'today?', 'Thanks.']
+' '.join(split_data).upper().split()
+['HEY', 'THERE,', 'HOW', 'ARE', 'YOU', 'TODAY?', 'THANKS.']
+ 
+addr = """H no - 58
+street no - 30
+Jaipur
+511209"""
+addr.split()
+['H', 'no', '-', '58', 'street', 'no', '-', '30', 'Jaipur', '511209']
+'511209'.upper()
+'511209'
+ 
+ 
+ 
+ 
+Slicing and indexing
+#### indexing / positioning
+str1 = 'HELLO THERE'
+str1[6]
+'T'
+str1[-5]
+'T'
+str4
+'   hey there How are you?'
+str4[-1]
+'?'
+#### slicing
+str4 =  str4.strip()
+str4
+'hey there How are you?'
+#### syntax str[start index : stop index(not included) : step]
+
+
+### positive step or no step (left to right)
+start default : 0
+stop default :  end of string    
+step default : 1
+    
+    
+    
+### negative step( prints the string in reverse) (right to left)
+start default : -1
+stop default :  start of string
+str4[10 : -1]
+'How are you'
+len(str4)
+22
+str4[10:]
+'How are you?'
+str4[0:9]
+'hey there'
+str4[9:0]   ## never throws error
+''
+str4[0:10]
+'hey there '
+str4[0:10:1]
+'hey there '
+ 
+str4[0:10:2]
+'hytee'
+str4[::2]
+'hyteeHwaeyu'
+'hey    there    how    you?'.split()
+['hey', 'there', 'how', 'you?']
+str4
+'hey there How are you?'
+str4[::3]
+'h e wry?'
+ 
+str4[9:0:-1]
+' ereht ye'
+str4[::-1]    ##### reverse of the string
+'?uoy era woH ereht yeh'
+str4[9:0:-1]    ##### reverse of the string
+' ereht ye'
+ 
+str4[ -1: -6: -1]
+'?uoy '
+ 
+str1 = 'welcome'
+str1[::-1]
+'emoclew'
+str1[-1:-3:-1]
+'em'
+str4[-1:-13:-1][::-1]
+'How are you?'
+str4[-1:-13:-2]
+'?o r o'
+print('hello')
+==========================================================================
+List
+l1 = [1,2,3,4,5,6]
+# comma separated elements bounded by box brackets
+# elements can be on any data type(heterogenous mixture)
+# mutability
+l2 = [1, 1.1, 'a', 'abcd', [1,2,3]]
+type(l2)
+list
+len(l2)
+5
+l3 = [[1,2,3], [4,5,6], [7,8,9,[1,2,3]]]
+len(l3)
+3
+# list methods
+l1
+[1, 2, 3, 4, 5, 6]
+l1.append(7)
+l1
+[1, 2, 3, 4, 5, 6, 7]
+l1.append([8,9])
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9]]
+l1.extend([10])
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9], 10]
+l1.extend([11,12,13])
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13]
+l1.append(['abcd', 11, 1.1])
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13, ['abcd', 11, 1.1]]
+l1.append('abcd')
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13, ['abcd', 11, 1.1], 'abcd']
+l1.insert(0, -1)
+l1
+[-1, 1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13, ['abcd', 11, 1.1], 'abcd']
+ 
+l1.insert(0, [1,2,3,34])
+l1
+[[1, 2, 3, 34],
+ -1,
+ 1,
+ 2,
+ 3,
+ 4,
+ 5,
+ 6,
+ 7,
+ [8, 9],
+ 10,
+ 11,
+ 12,
+ 13,
+ ['abcd', 11, 1.1],
+ 'abcd']
+ 
+l1.remove(-1)  #### find and delete the element provided
+l1
+[[1, 2, 3, 34],
+ 1,
+ 2,
+ 3,
+ 4,
+ 5,
+ 6,
+ 7,
+ [8, 9],
+ 10,
+ 11,
+ 12,
+ 13,
+ ['abcd', 11, 1.1],
+ 'abcd']
+l1.pop(0)    
+[1, 2, 3, 34]
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13, ['abcd', 11, 1.1], 'abcd']
+ 
+l1.sort()
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-36-b8f5f256bbcf> in <module>
+----> 1 l1.sort()
+
+TypeError: '<' not supported between instances of 'list' and 'int'
+l4 = [52,25,457,2,4,6,7,23,6,7,4, 1.1]
+l4.sort()
+l4
+[1.1, 2, 4, 4, 6, 6, 7, 7, 23, 25, 52, 457]
+l4.sort(reverse=True)
+l4
+[457, 52, 25, 23, 7, 7, 6, 6, 4, 4, 2, 1.1]
+l5 = ['b', 'a', 'C', 'd', 'E', 'f', 'G', 'g']
+l5.sort()
+l5
+['C', 'E', 'G', 'a', 'b', 'd', 'f', 'g']
+ 
+l1.reverse()
+l1
+['abcd', ['abcd', 11, 1.1], 13, 12, 11, 10, [8, 9], 7, 6, 5, 4, 3, 2, 1]
+l1[::-1]
+[1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13, ['abcd', 11, 1.1], 'abcd']
+ 
+['', 1]
+ 
+l5 = [4,3,2,6,2,6,2,6,7,8]
+l5.sort(reverse=True)
+l5
+[8, 7, 6, 6, 6, 4, 3, 2, 2, 2]
+l5[::-1]
+[2, 2, 2, 3, 4, 6, 6, 6, 7, 8]
+print(l5)
+[8, 7, 6, 6, 6, 4, 3, 2, 2, 2]
+ 
+l5 = l5[::-1]
+l5
+[2, 2, 2, 3, 4, 6, 6, 6, 7, 8]
+list(set(l5))
+[2, 3, 4, 6, 7, 8]
+l1.clear()
+l1
+[]
+l5.count(2)
+3
+#### slicing and indexing 
+l4
+[457, 52, 25, 23, 7, 7, 6, 6, 4, 4, 2, 1.1]
+l4[3]
+23
+l4[-1]
+1.1
+ 
+l1= [1, 2, 3, 4, 5, 6, 7, [8, 9], 10, 11, 12, 13, ['abcd', 11, 1.1], 'abcd']
+l2 = [[1,2,3], [4,5,6], [7,8,9,[1,2,3]]]
+l1[-1]
+'abcd'
+l1[-2]
+['abcd', 11, 1.1]
+l1[7].append(10)
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9, 10], 10, 11, 12, 13, ['abcd', 11, 1.1], 'abcd']
+l1[-2].remove('abcd')
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9, 10], 10, 11, 12, 13, [11, 1.1], 'abcd']
+#### mutability
+l1[-1] = 1.2
+l1
+[1, 2, 3, 4, 5, 6, 7, [8, 9, 10], 10, 11, 12, 13, [11, 1.1], 1.2]
+l1[1:4]
+[2, 3, 4]
+l1[-1:-5:-1]
+[1.2, [11, 1.1], 13, 12]
+#### syntax list[start index : stop index(not included) : step]
+
+
+### positive step or no step (left to right)
+start default : 0
+stop default :  end of list    
+step default : 1
+    
+    
+    
+### negative step( prints the list in reverse) (right to left)
+start default : -1
+stop default :  start of list
+ 
+ 
+l6 = [1,2,3, [4,5,6], [[[10,11,12]]]]
+len(l6)
+5
+l6[-1][0][0][0]
+10
+l6[-1][0][0][0]
+10
+# expectec - [[1,2,3], [4,5,6], [[[10,11,12]]]]
+l6.remove(1)
+l6.remove(2)
+l6.remove(3)
+l6.insert(0,[1,2,3])
+l6
+[[1, 2, 3], [4, 5, 6], [[[10, 11, 12]]]]
+l6 = l6[3:]
+l6.insert(0,[1,2,3])
+l6[3:]
+[]
+l6 = [1,2,3, [4,5,6], [[[10,11,12]]]]
+l6[3:].insert(0, [4,5,6])
+l6
+[1, 2, 3, [4, 5, 6], [[[10, 11, 12]]]]
+l6[3:].insert(0, [4,5,6])   #### one-off encounter
+l6
+[1, 2, 3, [4, 5, 6], [[[10, 11, 12]]]]
+l6[3:].insert(0, [9,8,7])
+[l6[3:]].insert(0, [1,2,3])
+l6
+[1, 2, 3, [4, 5, 6], [[[10, 11, 12]]]]
+ 
+Tuple
+# comma separated elements bounded by paranthesis
+# elements can be of any data type(heterogenous mixture)
+# immutability
+t1 = (1,2,3,4)
+type(t1)
+tuple
+t1.index(4)
+3
+l1.count(1)
+1
+#### slicing and indexing\
+t1[1:]
+(2, 3, 4)
+t1[-1]
+4
+t1[-1] = 100
+# tuple elements are immutable, hence cannot be reassigned
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-213-97080603de8f> in <module>
+----> 1 t1[-1] = 100
+      2 # tuple elements are immutable, hence cannot be reassigned
+
+TypeError: 'tuple' object does not support item assignment
+ 
+# lot & tol
+tol = ([1,2,3], [4,5,6], [7,8,9])
+tol
+([1, 2, 3], [4, 5, 6], [7, 8, 9])
+len(tol)
+3
+tol[-1]=100
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-202-3de4858d702e> in <module>
+----> 1 tol[-1]=100
+
+TypeError: 'tuple' object does not support item assignment
+tol[0][-1] =100
+tol
+([1, 2, 100], [4, 5, 6], [7, 8, 9])
+tol[0].append([2,3,4,4])
+tol
+([1, 2, 100, [2, 3, 4, 4]], [4, 5, 6], [7, 8, 9])
+ 
+lot = [(1,2,3), (4,5,6), (7,8,9)]
+len(lot)
+3
+lot[-1]=100
+lot
+[(1, 2, 3), (4, 5, 6), 100]
+lot[0][-1] = 100
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-211-d8350ac1ffdb> in <module>
+----> 1 lot[0][-1] = 100
+
+TypeError: 'tuple' object does not support item assignment
+ 
+ 
+tol[0] = [1,2,3]
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-212-b1ad6789a40c> in <module>
+----> 1 tol[0] = [1,2,3]
+
+TypeError: 'tuple' object does not support item assignment
+ 
+ 
+t1 = (1,2,3)
+t2 = (4,5,6)
+t1+t2
+(1, 2, 3, 4, 5, 6)
+list(t1)+list(t2)
+[1, 2, 3, 4, 5, 6]
+# [sum(i) for i  in list(zip(t1,t2))]
+[5, 7, 9]
+ 
+ 
+ 
+ 
+Dictionaries
+# keys and value pairs separated by ":" and bounded by braces
+d1 = {'name':'Ajit', 'age':25, 'roll_no':10, 'state':'MH', 'age':35}
+len(d1)
+4
+d1
+{'name': 'Ajit', 'age': 35, 'roll_no': 10, 'state': 'MH'}
+d1['age']
+35
+d1['name']
+'Ajit'
+d1['name'] = 'Abhishek'
+d1
+{'name': 'Abhishek', 'age': 35, 'roll_no': 10, 'state': 'MH'}
+#### methods
+d1.get('name')
+'Abhishek'
+d1.get('xyz', 'No such key exists in the dictionary')
+'No such key exists in the dictionary'
+d1.get('name', 'No such key exists in the dictionary')
+'Abhishek'
+ 
+d1.keys()
+dict_keys(['name', 'age', 'roll_no', 'state'])
+d1.values()
+dict_values(['Abhishek', 35, 10, 'MH'])
+list(d1.items())
+[('name', 'Abhishek'), ('age', 35), ('roll_no', 10), ('state', 'MH')]
+d1.pop('state')
+'MH'
+d1
+{'name': 'Abhishek', 'age': 35, 'roll_no': 10}
+d1.popitem()
+('roll_no', 10)
+d1
+{'name': 'Abhishek', 'age': 35}
+ 
+d2 = {'name': 'Rajat', 'age':15, 'subject':'PYTHON'}
+d1
+{'name': 'Abhishek', 'age': 35}
+d1.update(d2)
+d1
+{'name': 'Rajat', 'age': 15, 'subject': 'PYTHON'}
+ 
+d1.setdefault('class', 'NA')
+'NA'
+d1
+{'name': 'Rajat', 'age': 15, 'subject': 'PYTHON', 'class': 'NA'}
+d1.setdefault('name', 'NA')
+'Rajat'
+d1.setdefault('school', 'NA')
+'NA'
+d1
+{'name': 'Rajat',
+ 'age': 15,
+ 'subject': 'PYTHON',
+ 'class': 'NA',
+ 'school': 'NA'}
+ 
+set
+### unique elements bounded by braces
+cr = {1,2,3,54,6,3,5,7,4,6,7,6,46,7,3,4,75,46}
+s1
+{1, 2, 3, 4, 5}
+fo = {1,35,2,5,2,2,2,4,5,4,535,456,343,5,}
+s1.intersection(s2)
+{1, 2, 4, 5}
+cr.difference(fo)
+{3, 6, 7, 46, 54, 75}
+fo.difference(cr)
+{35, 343, 456, 535}
+s1 = {1,2,3,4,5}
+s2 = {3,4,5,6,7}
+s1.intersection(s2)
+{3, 4, 5}
+s1.difference(s2)
+{1, 2}
+s2.difference(s1)
+{6, 7}
+s1.symmetric_difference(s2)
+{1, 2, 6, 7}
+s1.union(s2)
+{1, 2, 3, 4, 5, 6, 7}
+ 
+ 
+ 
+d2 = {}
+type(d2)
+dict
+s2 = set([])
+type(s2)
+set
+ =================================================================================
+ds1 = [{'name':'Ajay', 'Age' : 10, 'subjects' : ['Physics', 'Maths']}]
+type(ds1)
+list
+len(ds1)
+2
+ds1[0]['subjects'][0]
+'Physics'
+ds1[0]['subjects'].append('Chemistry')
+ds1
+[{'name': 'Ajay', 'Age': 10, 'subjects': ['Physics', 'Maths', 'Chemistry']}]
+ 
+ds2 = {
+    'names' : ['ajay', 'vijay', 'raj'],
+    'ages'  : [20,30,40],
+    'dept'  : ['Finance', 'HR', 'Admin'],
+    'salaries' : (1000, 2000, 3000)
+}
+ds2
+{'names': ['ajay', 'vijay', 'raj'],
+ 'ages': [20, 30, 40],
+ 'dept': ['Finance', 'HR', 'Admin'],
+ 'salaries': (1000, 2000, 3000)}
+ds2['names'][0].capitalize()
+'Ajay'
+ds2['names'][0] = ds2['names'][0].capitalize()
+ds2['names'][1] = ds2['names'][1].capitalize()
+ds2['names'][2] = ds2['names'][2].capitalize()
+ds2
+{'names': ['Ajay', 'Vijay', 'Raj'],
+ 'ages': [20, 30, 40],
+ 'dept': ['Finance', 'HR', 'Admin'],
+ 'salaries': (1000, 2000, 3000)}
+# ds2['salaries'][2] = 30000
+list(ds2['salaries'])
+[1000, 2000, 3000]
+ds2['salaries'][2] = 30000
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-47-70d8c848948c> in <module>
+----> 1 ds2['salaries'][2] = 30000
+
+TypeError: 'tuple' object does not support item assignment
+list(ds2['salaries'])[-1] = 30000
+ls = list(ds2['salaries'])
+ls
+[1000, 2000, 3000]
+ls[-1] = 30000
+ls
+[1000, 2000, 30000]
+ds2['salaries'] = tuple(ls)
+ds2
+{'names': ['Ajay', 'Vijay', 'Raj'],
+ 'ages': [20, 30, 40],
+ 'dept': ['Finance', 'HR', 'Admin'],
+ 'salaries': (1000, 2000, 30000)}
+ 
+ds3 = {'names': ['Ajay', 'Vijay', 'Raj'],
+ 'ages': [20, 30, 40],
+ 'dept': ['Finance', 'HR', 'Admin'],
+ 'salaries': (1000, 2000, 30000), 
+ 'scrap'  : [
+     [
+         [
+             'hi there'
+         ]
+     ]
+ ]   }
+ds3['scrap'][0][0][0].upper()
+'HI THERE'
+ds3['scrap'] = 'hi there'
+ds3
+{'names': ['Ajay', 'Vijay', 'Raj'],
+ 'ages': [20, 30, 40],
+ 'dept': ['Finance', 'HR', 'Admin'],
+ 'salaries': (1000, 2000, 30000),
+ 'scrap': 'hi there'}
+ 
+ 
+ 
+Conditinal statements
+time = 13
+if time<12:   #### test condition
+    print('GM')  ### body of if (always indented equally)
+arrival = 18
+# if arrival < 17:
+#     print('we will go out!!!')
+we will go out!!!
+if arrival < 17:
+    print('we will go out!!!')
+print('sleep')
+sleep
+arrival<17
+    going out
+    eating out 
+    shopping
+sleeping
+ 
+file_arrived = 'No'
+
+
+if file_arrived == 'yes':
+    print('start processing file')
+    print('start logging data')
+    print('send process completion mail')
+print('End of days process!')
+End of days process!
+arrival = 18
+if arrival < 17:
+    print('we will go out!!!')
+else:
+    print('we wont go out, but we can order food!')
+we wont go out, but we can order food!
+time = 17
+if time<12:
+    print('Good morning')
+else:
+    if ((time>=12) and (time<16)):
+        print('Good Afternoon')
+    else:
+        if (time>16):
+            print('Good Evening')
+  File "<ipython-input-169-13203051a0de>", line 3
+    else True:
+         ^
+SyntaxError: invalid syntax
+i = 10
+if (i == 10):  
+    if (i < 15): 
+        print ("i is smaller than 15") 
+    if (i < 12): 
+        print ("i is smaller than 12") 
+    else: 
+        print ("i is greater than 15") 
+i is smaller than 15
+i is smaller than 12
+ 
+time = 10
+if time<12:
+    print('Good morning')
+else:
+    if ((time>=12) and (time<16)):
+        print('Good Afternoon')
+    else:
+        if (time>16):
+            print('Good Evening')
+Good morning
+if time<12:
+    print('Good morning')
+elif ((time>=12) and (time<16)):
+    print('Good Afternoon')
+elif (time>16):
+    print('Good Evening')
+else:
+    print('Good Night')
+Good morning
+ 
+ 
+ 
+ 
+ 
+ 
+d = {'a': 0, 'b': 1, 'c': 0}
+
+if d['a'] > 0:
+    print('ok1')
+elif d['b'] > 0:
+    print('ok2')
+elif d['c'] > 0:
+    print('ok3')
+elif d['d'] > 0:
+    print('ok4')
+else:
+    print('not ok')
+ok2
+d = {'a': 0, 'b': 1, 'c': 0}
+
+if d['a'] > 0:
+    print('ok1')
+elif d['d'] > 0:
+    print('ok2')
+elif d['c'] > 0:
+    print('ok3')
+elif d['d'] > 0:
+    print('ok4')
+else:
+    print('not ok')
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+<ipython-input-172-bd854f9a0263> in <module>
+      3 if d['a'] > 0:
+      4     print('ok1')
+----> 5 elif d['d'] > 0:
+      6     print('ok2')
+      7 elif d['c'] > 0:
+
+KeyError: 'd'
+x = 11
+y = 21
+z = 30
+
+print("Start")   
+if x == 10:
+    print(" Nested If")
+    if y == 20:
+        print(" End of Nested If Block ")
+    else:
+        print(" End of Nested If-Else Block ")
+elif y == 20:
+    print(" Elif block ")
+else:
+    print(" Nested If")
+    if z == 30:
+        print(" End of Nested If Block ")
+    else:
+        print(" End of Nested If-Else Block ")
+print("Stop")
+Start
+ Nested If
+ End of Nested If Block 
+Stop
+ 
+iterations
+# while
+# for
+i = 0     #### counter initialization
+while i<=4:   #### test condition
+    print('helloo!!') #### body of while
+    i+=1   #### inc/dec 
+helloo!!
+helloo!!
+helloo!!
+helloo!!
+helloo!!
+i = 5
+while i>=1:
+    print('Hello!!')
+    i-=1
+Hello!!
+Hello!!
+Hello!!
+Hello!!
+Hello!!
+# odd even numbers
+0-10
+i=0
+while i<=10:
+    if i%2==0:
+        print(i, ' - Even')
+    else:
+        print(i, ' - Odd')
+    i+=1    
+0  - Even
+1  - Odd
+2  - Even
+3  - Odd
+4  - Even
+5  - Odd
+6  - Even
+7  - Odd
+8  - Even
+9  - Odd
+10  - Even
+# continue and break
+i=0
+while i<=10:
+    i+=1    
+    if i in [3,7,8]:
+        continue
+    print(i)
+    
+print('exit')
+1
+2
+4
+5
+6
+9
+10
+11
+exit
+i=0
+while i<=10:
+    i+=1    
+    if i==3:
+        break
+    print(i)
+    
+print('Exit')
+1
+2
+Exit
+ 
+# while + else
+i=0
+while i<=4:
+    i+=1    
+    if i in [3,7,8]:
+        continue
+    print(i)
+    
+print('exit')
+1
+2
+4
+5
+exit
+i=0
+while i<=4:
+    i+=1    
+    if i in [3,7,8]:
+        continue
+    print(i)
+else:
+    print('exit')
+1
+2
+4
+5
+exit
+i=0
+while i<=4:
+    i+=1    
+    if i in [3,7,8]:
+        break
+    print(i)    
+print('exit')
+1
+2
+exit
+i=0
+while i<=4:
+    i+=1    
+    if i in [3,7,8]:
+        break
+    print(i)
+else:
+    print('exit')
+1
+2
+ 
+#### For loop
+list(range(5))
+[0, 1, 2, 3, 4]
+len([1,2,3,4,5])
+5
+for i in [1,2,10,4,5,6]:
+    print('hello - ', i)
+hello -  1
+hello -  2
+hello -  10
+hello -  4
+hello -  5
+hello -  6
+# list tuple dict set string
+for i in [[0,1], [2,3]]:
+    i.append(1)
+    print(i)
+[0, 1, 1]
+[2, 3, 1]
+ 
+for i in range(5):
+    if i==3:
+        continue
+    print(i)
+0
+1
+2
+4
+for i in range(10):
+    if i==3:
+        break
+    print(i)
+0
+1
+2
+ 
+# rows = int(input("Enter the number of rows:"))  
+# k = 2 * rows - 2  # It is used for number of spaces  
+# for i in range(0, rows):  
+#     for j in range(0, k):  
+#         print(end=" ")  
+#     k = k - 2   # decrement k value after each iteration  
+#     for j in range(0, i + 1):  
+#         print("* ", end="")  # printing star  
+#     print("")  
+even_num = 0
+odd_num = 0
+for i in range(10):
+    if i%2==0:
+        even_num+=1
+        print(i, ' - even')
+    else:
+        odd_num+=1
+        print(i, ' - odd')
+0  - even
+1  - odd
+2  - even
+3  - odd
+4  - even
+5  - odd
+6  - even
+7  - odd
+8  - even
+9  - odd
+even_num
+5
+odd_num
+5
+counter=0
+for i in [0,1,2]:
+    for j in [10,11,12]:
+        for k in [11,23,34]:
+            print(i,j)
+0 10
+0 10
+0 10
+0 11
+0 11
+0 11
+0 12
+0 12
+0 12
+1 10
+1 10
+1 10
+1 11
+1 11
+1 11
+1 12
+1 12
+1 12
+2 10
+2 10
+2 10
+2 11
+2 11
+2 11
+2 12
+2 12
+2 12
+counter
+27
+ =================================================================================
+l1 = ['abc', 'def', 'ghi', 'jkl']
+for i in l1: ### will run 4 times(lenth of list)
+    print(i.upper())
+ABC
+DEF
+GHI
+JKL
+l2 = []
+for i in l1: ### will run 4 times(lenth of list)
+    l2.append(i.upper())
+l2
+['ABC', 'DEF', 'GHI', 'JKL']
+d1 = {'name':'Ajay', 'age':10, 'state':'MH', 'subject':'Physics'}
+list(d1.values())
+['Ajay', 10, 'MH', 'Physics']
+for i in list(d1.keys()):
+    print(i.upper())
+NAME
+AGE
+STATE
+SUBJECT
+l3 = []
+for i,j in d1.items():
+    l3.append( (i.upper(), j) )
+l3
+[('NAME', 'Ajay'), ('AGE', 10), ('STATE', 'MH'), ('SUBJECT', 'Physics')]
+dict(l3)
+{'NAME': 'Ajay', 'AGE': 10, 'STATE': 'MH', 'SUBJECT': 'Physics'}
+ 
+ 
+l1 = ['abc', 'def', 'ghi', 'jkl']
+vowels = ['a', 'e', 'i', 'o', 'u']
+s1 = ''.join(l1)
+s1
+'abcdefghijkl'
+num_vow = 0
+for letter in s1:
+    if letter in vowels:
+        num_vow +=1
+num_vow
+3
+s2 = 'aaeuuuuuu'
+
+d1 = {}
+
+for i in s2:
+    if i in vowels:
+        if i not in d1.keys():
+            d1[i] = 1
+        else:
+            d1[i] = d1[i]+1
+
+
+len(d1)
+3
+sum(d1.values() )
+9
+ 
+ 
+UDFS - User defined functions
+### set of related instructions bound together under a name for achieving a common purpose
+len(['abc', 'def'])
+2
+# inbuilt functions (len, type, id, sorted)
+# len()  can't use
+l1 = [1,2,3,4,5,6]
+ 
+count
+6
+def length(l1):
+    count = 0
+    for i in l1:
+        count+=1
+    print(count)
+length([1,2,3,4,5,6,7])
+7
+ 
+ 
+str1 = '     hello!    '
+str3 = '    sadjsd!    '
+s2 = str3.strip()
+print(s2.upper())
+SADJSD!
+### makes code reusable
+def cleaner(string):  ### function to clean strings
+    print(string.strip().upper())
+cleaner(str1)
+HELLO!
+cleaner(str3)
+SADJSD!
+len([1,2,3])
+3
+ 
+# def function_name(parameters(optional)):
+#     code
+#     code
+#     code
+#     return/print
+def odd_even():
+    for i in range(1,11):
+        if i%2==0:
+            print('even - ', i)
+        else:
+            print('odd - ', i)
+odd_even()
+odd -  1
+even -  2
+odd -  3
+even -  4
+odd -  5
+even -  6
+odd -  7
+even -  8
+odd -  9
+even -  10
+def odd_even(limit):
+    for i in range(limit):
+        if i%2==0:
+            print('even - ', i)
+        else:
+            print('odd - ', i)
+odd_even(limit=20)
+even -  0
+odd -  1
+even -  2
+odd -  3
+even -  4
+odd -  5
+even -  6
+odd -  7
+even -  8
+odd -  9
+even -  10
+odd -  11
+even -  12
+odd -  13
+even -  14
+odd -  15
+even -  16
+odd -  17
+even -  18
+odd -  19
+company = 'doodle'   ### global variable
+def email_maker(fname, lname):
+    return(fname+'.'+lname+'@'+company+'.com')
+email_maker(fname='raj', lname='singh')   #### kdyword params
+'raj.singh@doodle.com'
+email_maker(fname='rajat', lname='mehta')
+'rajat.mehta@doodle.com'
+ 
+rajats_email = email_maker(fname='rajat', lname='mehta')
+rajats_email
+'rajat.mehta@doodle.com'
+ 
+ 
+ 
+ 
+ 
+def adder(a,b,c):
+    print(a+b+c)
+adder(a=1, b=2, c=3)   ### keyword params
+6
+adder(1,2,3)           ### positional params
+6
+ 
+def sub(a,b):
+    print(a-b)
+sub(10,1)
+9
+sub(1,10)
+-9
+sub(a=1, b=10)
+-9
+sub(b=10, a=1)
+-9
+ 
+def adder(a,b,c,d):
+    print(a+b+c+d)
+adder(a=1, b=2, c=3, d=4)
+10
+adder(1,b=2,c=3,d=4)
+10
+adder(1,2,c=3,d=4)
+10
+adder(a=1,b=2,c=3,4)
+  File "<ipython-input-199-9f5809de35a9>", line 1
+    adder(a=1,b=2,c=3,4)
+                      ^
+SyntaxError: positional argument follows keyword argument
+adder(2,c=3,a=1,d=4)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-201-1dc2f52b956a> in <module>
+----> 1 adder(2,c=3,a=1,d=4)
+
+TypeError: adder() got multiple values for argument 'a'
+adder(c=1, 2,3,4)
+  File "<ipython-input-202-ba31bc1ed2a4>", line 1
+    adder(a=1, 2,3,4)
+               ^
+SyntaxError: positional argument follows keyword argument
+#### thumb rule :: once you place '=' sign in any params, always supply keyword arguement with '=' after that
+ 
+adder(a=2, c=3,d=4,b=5)
+14
+adder(1,b=2,c=3,d=4)
+10
+adder(d=1,b=2,3,4)
+  File "<ipython-input-210-0b9980c87580>", line 1
+    adder(d=1,2,3,4)
+              ^
+SyntaxError: positional argument follows keyword argument
+def name_upper_return(str1):
+    return(str1.upper())
+def name_upper_print(str1):
+    print(str1.upper())
+name_upper_return(str1='hello')
+'HELLO'
+name_upper_print(str1='hello')
+HELLO
+res_return = name_upper_return('hello')
+res_print = name_upper_print('hello')
+HELLO
+res_return
+'HELLO'
+res_print
+ 
+res = print('hello'.upper())
+HELLO
+type(print('hello'.upper()))
+HELLO
+NoneType
+type(res_print)
+NoneType
+### key word
+### positional
+def adder(a=0,b=0):   ### default params
+    return(a+b)
+adder()
+0
+adder(10, 11)
+21
+adder(10, 0)
+10
+adder(0,10)
+10
+ 
+# nunnamed params
+def adder(a,b,c):
+    return(a+b+c)
+adder(1,2,0)
+3
+adder(10,11,0)
+21
+adder(1,2,3)
+6
+def adder(*args):
+    print(args)
+    print(type(args))
+adder(1)
+(1,)
+<class 'tuple'>
+adder(1,2)
+(1, 2)
+<class 'tuple'>
+adder(1,2,3)
+(1, 2, 3)
+<class 'tuple'>
+def adder(*args):
+    return(sum(args))
+adder(1)
+1
+adder(1,2)
+3
+adder(1,2,3,4,5,6,7,8,32,54,6,4,4,5)
+141
+def adder_str(*args):
+    return(' '.join(args))
+adder_str('abc',' def')
+'abc  def'
+adder_str('a', 'b','c', 'd')
+'a b c d'
+def address_printer(hno, street, state):
+    print('hno - ', hno)
+    print('street - ', street)
+    print('state - ', state)
+address_printer(hno=30, street='FC', state='MH')
+hno -  30
+street -  FC
+state -  MH
+address_printer(hno=30, street='FC', state='MH', pin= 411057)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-298-194780c63979> in <module>
+----> 1 address_printer(hno=30, street='FC', state='MH', pin= 411057)
+
+TypeError: address_printer() got an unexpected keyword argument 'pin'
+ 
+# n-named arguements
+def address_printer(**kwargs):
+    print(kwargs)
+address_printer(hno=30, street='FC', state='MH')
+{'hno': 30, 'street': 'FC', 'state': 'MH'}
+address_printer(hno=30, street='FC', state='MH', pin=411057)
+{'hno': 30, 'street': 'FC', 'state': 'MH', 'pin': 411057}
+ 
+def address_printer(**add_det):
+    for k,v in add_det.items():
+        print(k, ' - ', v)
+address_printer(hno=30, street='FC', state='MH', pin=411057, country= 'INDIA')
+hno  -  30
+street  -  FC
+state  -  MH
+pin  -  411057
+country  -  INDIA
+ 
+def vaccination(*args):
+    print('house_nums - ', args)
+vaccination(1,2,35,7,7,)
+house_nums -  (1, 2, 35, 7, 7)
+def vaccination(**kwargs):
+    print(kwargs)
+vaccination(s1=[1,2,3,4], s2=[5,6,7,8,1,2,3,4])
+{'s1': [1, 2, 3, 4], 's2': [5, 6, 7, 8, 1, 2, 3, 4]}
+ 
+ 
+def address_printer(**add_det):
+    for k,v in add_det.items():
+        print(k, ' - ', v)
+address_printer(hno=20, state='MH')
+hno  -  20
+state  -  MH
+ 
+ 
+ 
+ 
+def odd_even(limit):
+    l2 = []
+    for i in range(limit):
+        if i%2==0:
+            l2.append(i)
+    return(l2)
+l2 = odd_even(10)
+l2
+[0, 2, 4, 6, 8]
+sum(l2)
+20
+ ================================================================================
+if-else statements:
+=================
+Python supports if-else statements.It is a decision making statements in python.If 
+if condition is true then if block will be executed otherwise else block will be executed.
+
+if(cond):
+   ---if part true then execute otherwise go to else part
+else:
+   ---
+
+Ex1:
+==
+import time 
+P1=input("Enter the password:")
+P2=input("Enter the confirm passsword:")
+if(P1=="_12345" and P2=="_12345"):
+    print(P1,P2,"--->Valid password")
+else:
+    print(P1,P2,"--->In_Valid password")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex2:
+===
+import time 
+P1=input("Enter the password:")
+P2=input("Enter the confirm passsword:")
+if(P1==P2):
+    print(P1,P2,"--->Valid password")
+else:
+    print(P1,P2,"--->In_Valid password")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+Number=eval(input("Enter the number:"))
+if(Number>=0):
+    print(Number,"--->IT IS POSTIVE NUMBER")
+else:
+    print(Number,"--->IT IS A NEGATIVE NUMBER")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex4:
+===
+import time 
+Number=eval(input("Enter the a number:"))
+if(Number%2==0):
+    print(Number,"--%>IT EVEN NUMBER")
+else:
+    print(Number,"--->IT IS ODD NUMBER")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Ex5:
+====
+import time 
+str1=input("Enter the string object:")
+if(str1==str1[::-1]):
+    print(str1,str1[::-1],"--->Given string is palindrome string")
+else:
+    print(str1,str1[::-1],"--->Given string is not a palindrome string")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex6:
+===
+import time 
+str1=input('Enter the string object_one:')
+str2=input('Enter the strig object_two:')
+if(str1=="Django" and str2=="Django"):
+    print(str1,str2,"--->Both string are same")
+else:
+    print(str1,str2,"--->Both string are not same")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+if-elif-else:
+============
+Python supports if-elif-else.It is a decision making or conditional statements in python.The 
+main objective of if-elif-else is to check more than one condition as per the reqn.
+
+if(cond):
+    ---
+elif(cond):
+    ---
+elif(cond):
+    --
+else:
+    ---
+
+Ex1:
+===
+import time 
+Language=input("Enter the technology:")
+if(Language=="Python"):
+    print(Language,"-->Meant for general purpose application")
+elif(Language=="JavaScript"):
+    print(Language,"--->Meant for clientside validation")
+elif(Language=="Django"):
+    print(Language,"--->Meant to develop web applications")
+elif(Language=="ReactJS"):
+    print(Language,"---Meant single page application")
+elif(Language=="FastAPI"):
+    print(Language,"--->Meant for to develop rest_ful API ")
+else:
+    print(Language,"Dear students enter proper language")
+
+
+0 ---> ZERO
+1 --->ONE
+9 --->NINE
+10 --->Not allowed
+
+
+Ex2:
+===
+import time 
+Number=eval(input("Enter the single digit number from[0:9]:"))
+if(Number==0):
+    print(Number,"--->ZERO")
+elif(Number==1):
+    print(Number,"--->ONE")
+elif(Number==2):
+    print(Number,"--->TWO")
+else:
+    print(Number,"Dear Students only allow numbers are[0-9]")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Iterative statements in python:
+=============================
+Python supports iterative  statements.The main objective of iterative
+statements if you want to execute number of statements number of time then 
+we can go with iterative statements in python.Following are the
+iterative statements in python
+
+->for loop
+->nested for loop
+->while loop
+->nested while loop
+
+
+
+Note:
+----
+In python swtitch statement and do while loop are not supported.
+
+->for loop:
+==========
+It is a iterative statement in python.If you want to execute number of 
+statements number of times if our data or information is in sequence or if
+we know the limit of data or information then we can go with for loop.
+
+
+for(cond):
+    ---
+
+Ex1:
+===
+import time 
+for x1 in range(15):
+    print("Software developers")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+for x1 in [chr(65),chr(66),chr(67),chr(68)]:
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+for x1 in (chr(97),chr(98),chr(99),chr(100)):
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+Ex4:
+==
+import time 
+for x1 in {ord('A'),ord('B'),ord('C'),ord('D')}:
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex5:
+===
+import time 
+for x1 in {"Pid":1001,"Pname":"Mobile","Price":25000,"Company":"Samsung"}.keys():
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex6:
+===
+import time 
+for x1 in {"Pid":1001,"Pname":"Mobile","Price":25000,"Company":"Samsung"}.values():
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex7:
+===
+import time 
+for x1,y1 in {"Pid":1001,"Pname":"Mobile","Price":25000,"Company":"Samsung"}.items():
+    print(x1,"---",y1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex8:
+===
+import time 
+for x1 in {"Pid":1001,"Pname":"Mobile","Price":25000,"Company":"Samsung"}.items():
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex9:
+===
+import time 
+for obj1 in "IOT DEVELOPER":
+    print(obj1,end=" ")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex10:
+===
+import time 
+str1=input("Enter the string object:")
+for x1 in str1:
+    print(x1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex11:
+===
+import time 
+str1=input("Enter the string object:")
+for x1 in range(len(str1)):
+    print(x1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex12:
+====
+import time 
+str1=input("Enter the string object:")
+print('Indexing',"----","Python Objects")
+for x1 in range(len(str1)):
+    print(x1,"----",str1[x1])
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex13:
+=====
+import time 
+str1=input("Enter the string object:")
+A=0
+for x1 in str1:
+    if(x1 in ("AEIOUaeiou")):
+        A+=1
+        print(x1)
+print()
+print("Number of vowels in given string:",A)
+print()
+time.sleep(2)
+print("End of an application")
+=========================================================================
+Ex1:
+===
+import time 
+B=0
+for x1 in "Software developer":
+    if(x1 in ("AEIUOaeiou")):
+        B+=1 
+        print(x1)
+print()
+print("The number of vowels in given string is:",B)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+C=0
+str1=input("Enter the string objects:")
+for x1 in range(len(str1)):
+    if(str1[x1] in ("AEIOUaeiou")):
+        C+=1
+        print(str1[x1])
+print()
+print("Number of vowels are present in given string object:",C)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+List_One=[12,15,17,18,21,23,27]
+print(List_One)
+print()
+print(type(List_One))
+print()
+for x1 in List_One:
+    print(x1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time 
+List_One=[12,15,17,18,21,23,27]
+print(List_One)
+print()
+print()
+print(type(List_One))
+print()
+for x1 in List_One:
+    print(List_One)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Sum of the list:
+================
+
+Ex1:
+---
+import time 
+List_One=[12,15,17,18,21,23,27]
+A=0 
+for x1 in List_One:
+    A=A+x1
+print("The sum of the list is:",A)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Ex2:
+===
+import time 
+C=0
+for x1 in [12,15,17,18,21,23,27]:
+    C=C+x1 
+print("The sum of the list is:",C)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+List_One=[10,20,30,40,50]
+D=0 
+for y1 in range(len(List_One)):
+    D=D+List_One[y1]
+print("The result is :",D)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+List_One=[1,2,3,4,5,1,2,3]
+
+
+Ex1:
+===
+import time 
+List_One=eval(input('Enter the list data type:'))
+res1=[]
+for x1 in List_One:
+    if x1 not in res1:
+        res1.append(x1)
+print("Our list object with duplicate values:",List_One)
+print()
+print("Our list objects after removing duplicate values:",res1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+L1=eval(input("Enter the list data:"))
+L2=[]
+for x1 in range(len(L1)):
+    if(L1[x1] not in L2):
+        L2.append(L1[x1])
+print(L1)
+print()
+print(L2)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+res1=[]
+for y1 in [1,2,3,1,3]:
+    if(y1 not in res1):
+        res1.append(y1)
+print(res1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+My List is:[14,17,12,11,19,37,38,47,48,105,107,109,115]
+
+Add 1000 to list object if list value less than 20
+Add 5000 to list object if list values greater than  100
+If the values >20 and <100 remains the value as it is
+==============================================================================
+01:41 17-04-2023 
+
+List_One=[16,17,18,19,51,52,53,53,101,102,103]
+
+
+Ex1:
+====
+import time 
+List_One=[16,17,18,19,51,52,53,53,101,102,103]
+List_Two=[]
+for x1 in List_One:
+    if(x1<20):
+        obj1=x1+1000 
+        List_Two.append(obj1)
+    elif(x1>100):
+        obj1=x1+5000 
+        List_Two.append(obj1)
+    elif(x1>20 and x1<100):
+        obj1=x1+0 
+        List_Two.append(obj1)
+print("Before performing operations:",List_One)
+print()
+print("After performing operations:",List_Two)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+List_One=[12,16,2,19,21,23,27]
+
+
+Ex1:
+===
+import time 
+n=eval(input("Enter the number of row of list object"))
+result=[]
+for x1 in range(1,n+1):
+    obj1=int(input('Enter the list elements:'))
+    result.append(obj1)
+print("Our list elements are:",result)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+n=eval(input("Enter the number of row of list object"))
+result=[]
+for x1 in range(1,n+1):
+    obj1=int(input('Enter the list elements:'))
+    result.append(obj1)
+print("Our list elements are:",result)
+print()
+result.sort()
+print("My list objects are in ascending order:",result)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+====
+import time 
+n=eval(input("Enter the number of row of list object"))
+result=[]
+for x1 in range(1,n+1):
+    obj1=int(input('Enter the list elements:'))
+    result.append(obj1)
+print("Our list elements are:",result)
+print()
+result.sort()
+print("My list objects are in ascending order:",result)
+print()
+print("Largest object from list is:",result[n-1])
+print()
+print("Second largest object from list is:",result[n-2])
+print()
+print("Thrird largest number from list is:",result[n-3])
+print()
+print("Fourth largest object from listy is:",result[n-4])
+print()
+print("Fifth largest elemtents from the list is:",result[n-5])
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time 
+str1=input("Enter the string object:")
+str2=""
+for x1 in str1:
+    str2=x1+str2
+print("Our string object in ascending order is:",str1)
+print()
+print("our string object in decending order is:",str2)
+print()
+print('---To validate wheather given string is Palindrom or not---')
+if(str1==str2):
+    print(str1,str2,"<--->GIVEN STRING OBJECT IS PALINDROM")
+else:
+    print(str1,str2,"<--->GIVEN STRING ONBJECT IS NOT A PALINDROM")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+Number=int(input("Enter the any number from your wish:"))
+for x1 in range(1,11):
+    print(Number,"X",x1,"=",Number*x1)
+print()
+time.sleep(2)
+print("End of an application...")
+
+
+Ex4:
+===
+import time 
+Product_Info=eval(input("Enter the number of rows:"))
+for x1 in range(Product_Info):
+    Pid=int(input('Enter the Pid:'))
+    Pname=input("Enter the Pname:")
+    Price=float(input("Enter the Price:"))
+    Company=input("Enter the company:")
+    M_date=input("Enter the M_date:")
+    Exp_date=input("Enter the Exp_date:")
+print()
+print('---Product Information----')
+print("Pid is:",Pid)
+print("Pname:",Pname)
+print("Price is:",Price)
+print("Company is:",Company)
+print("M_date:",M_date)
+print("Exp_date is:",Exp_date)
+print("-------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex5:
+===
+import time 
+Product_Info=eval(input("Enter the number of rows:"))
+for x1 in range(Product_Info):
+    Pid=int(input('Enter the Pid:'))
+    Pname=input("Enter the Pname:")
+    Price=float(input("Enter the Price:"))
+    Company=input("Enter the company:")
+    M_date=input("Enter the M_date:")
+    Exp_date=input("Enter the Exp_date:")
+    print()
+    print('---Product Information----')
+    print("Pid is:",Pid)
+    print("Pname:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("M_date:",M_date)
+    print("Exp_date is:",Exp_date)
+    print("-------------------------")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+
+C:\Users\Admin\Desktop\IHUB_Python_Session>Python index1.py
+Enter the number of rows:2
+Enter the Pid:1001
+Enter the Pname:Mobile
+Enter the Price:12000
+Enter the company:S1
+Enter the M_date:2023
+Enter the Exp_date:2024
+---Product Information----
+Pid is: 1001
+Pname: Mobile
+Price is: 12000.0
+Company is: S1
+M_date: 2023
+Exp_date is: 2024
+-------------------------
+Enter the Pid:1002
+Enter the Pname:LCD_TV
+Enter the Price:49000
+Enter the company:S3
+Enter the M_date:2024
+Enter the Exp_date:2025
+---Product Information----
+Pid is: 1002
+Pname: LCD_TV
+Price is: 49000.0
+Company is: S3
+M_date: 2024
+Exp_date is: 2025
+-------------------------
+
+End of an application
+
+C:\Users\Admin\Desktop\IHUB_Python_Session>
+===============================================================================
+Ex1:
+===
+import time 
+str1=input("Enter the string object:")
+a=0 
+while(a<len(str1)):
+    print(a)
+    a+=1 
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+Enter the string object:ABCD
+0
+1
+2
+3
+
+
+
+
+End of an application
+
+Ex2:
+===
+import time 
+str1=input("Enter the string object:")
+a=0 
+while(a<len(str1)):
+    print(str1[a])
+    a+=1 
+print()
+time.sleep(2)
+print("End of an application")
+
+OUTPUT:
+======
+Enter the string object:ABCD
+A
+B
+C
+D
+
+End of an application
+
+
+Ex3:
+===
+import time 
+str1=input("Enter the string object:")
+a=0 
+while(a<len(str1)):
+    print(a,"----",str1[a])
+    a+=1 
+print()
+time.sleep(2)
+print("End of an application")
+
+OUTPUT:
+======
+Enter the string object:ABCD
+0 ---- A
+1 ---- B
+2 ---- C
+3 ---- D
+
+End of an application
+
+
+Ex4:
+===
+import time 
+str1=input("Enter the string object:")
+x=0
+A=0
+while(x<len(str1)):
+    if(str1[x] in ("AEIOUaeiou")):
+        A+=1
+        print(str1[x])
+    x+=1 
+print()
+print("Vowels present in given string is:",A)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+Enter the string object:Django
+a
+o
+
+Vowels present in given string is: 2
+
+End of an application
+
+
+Ex5:
+===
+import time 
+str1=input("Enter the string object:")
+str2=""
+x=0 
+while(x<len(str1)):
+    str2=str1[x]+str2
+    x+=1 
+print("My string object is:",str1)
+print()
+print("Reverse of a string is:",str2)
+print()
+if(str1==str2):
+    print(str1,str2,"--->PALINDROM")
+else:
+    print(str1,str2,"---NOT A PALINDROM")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+Enter the string object:Django
+My string object is: Django
+
+Reverse of a string is: ognajD
+
+Django ognajD ---NOT A PALINDROM
+
+End of an application
+
+
+Ex6:
+===
+import time 
+List_One=eval(input('Enter the list data:'))
+R=0 
+x=0 
+while(x<len(List_One)):
+    R=R+List_One[x]
+    x+=1
+print("The result is:",R)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+[12,76,13,24,19]
+
+
+Ex7:
+====
+import time 
+List_One=eval(input('Enter the list data:'))
+l2=[]
+R=0 
+x=0 
+while(x<len(List_One)):
+    if(List_One[x]%2==0):
+        s1=List_One[x]+1 
+        l2.append(s1)
+    elif(List_One[x]%2==1):
+        s1=List_One[x]+1000 
+        l2.append(s1)
+    x+=1 
+print("The result list is",l2)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex8:
+====
+import time 
+Number=eval(input("Enter the number:"))
+x=1 
+while(x<11):
+    print(Number,"*",x,"=",Number*x)
+    x+=1
+print()
+time.sleep(2)
+print("End of an application")
+
+
+My_List is:[14,15,16,17,68,69,70,302,303,305]
+
+Ex1:
+===
+import time 
+List_One=eval(input('Enter the list data type:'))
+res1=[]
+a=0 
+while(a<len(List_One)):
+    if(List_One[a] not in res1):
+        res1.append(List_One[a])
+    a+=1
+print()
+print("My list object with duplicate values:",List_One)
+print()
+print("After removing the duplicate objects:",res1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+======
+Enter the list data type:[14,15,16,17,68,69,70,302,303,305,14,15,303]
+
+My list object with duplicate values: [14, 15, 16, 17, 68, 69, 70, 302, 303, 305, 14, 15, 303]
+
+After removing the duplicate objects: [14, 15, 16, 17, 68, 69, 70, 302, 303, 305]
+
+End of an application
+
+
+My_List is:[14,15,16,17,68,69,70,302,303,305]
+
+
+Ex2:
+====
+import time 
+List_One=eval(input('Enter the list data type:'))
+res1=[]
+a=0 
+while(a<len(List_One)):
+    if(List_One[a]<20):
+        s1=List_One[a]+25000 
+        res1.append(s1)
+    elif(List_One[a]>300):
+        s1=List_One[a]+50000 
+        res1.append(s1)
+    elif(List_One[a]>20 and List_One[a]<300):
+        s1=List_One[a]+0 
+        res1.append(s1)
+    a+=1 
+print("Before operations:",List_One)
+print()
+print("After operation:",res1)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+=====
+Enter the list data type:[14,15,16,17,68,69,70,302,303,305]
+Before operations: [14, 15, 16, 17, 68, 69, 70, 302, 303, 305]
+
+After operation: [25014, 25015, 25016, 25017, 68, 69, 70, 50302, 50303, 50305]
+
+End of an application
+================================================================================
+-----Functional programming language in python:
+=========================================
+
+What is a function?
+------------------
+Function can be represent as piece of code or block of unit.The main 
+objective of functions is to provide the code reusability which means 
+once write call any number of time as per the application reqn.In python 
+we do have two types of functions
+
+->Predefine functions
+->User define functions
+
+->Predefine functions:
+=====================
+A function is which is developed or created at time of developing 
+the python programming language then it is said to be predefine function
+
+->print()
+->id()
+->eval()
+->type()
+->zip()
+
+
+->User define functions:
+======================
+A function which is created by developers or programmers at time of 
+writing the business logic then it is said to user define function.A user
+define function can be define or declare using def keyword followed function
+name.
+
+
+__name__=="__main__":
+===================
+It is a specail method in python.The main objective of this method is execute 
+block of unit or piece of code  directly  or indirectly
+
+
+def function_name(): -----> Called function
+     ---
+if(__name__=="__main__"):
+     function_name() ----->Calling function
+
+
+Ex1:
+===
+import time
+def Test_Case1():
+    print("Welcome to Python as functional programming language")
+if(__name__=="__main__"):
+    Test_Case1()
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex2:
+===
+import time
+def Test_Case1():
+    print("Welcome to Python as functional programming language")
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case1()
+    print()
+    Test_Case1()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Formal parameters and Actual parameters:
+=======================================
+
+
+Formal parameters:
+=================
+Formal parameters can be represent as if we are using a variable or identifier 
+as parameter to the function at time creating a function.Then it is said to 
+be formal parameters.
+
+
+Actual parameters:
+==================
+Actual parameters can be represent as if using parameter  as value at time of calling 
+a function then it is said to actual parameters.
+
+
+Ex1:
+===
+import time 
+def Test_Student_Palaced_Case1(Eid,Ename,Esal,Design,Company):
+    print("---Employee Information---")
+    print('Eid is:',Eid)
+    print('Ename is:',Ename)
+    print("Esal is:",Esal)
+    print("Designation is:",Design)
+    print("Company is:",Company)
+    print("-------------------------------")
+    print()
+if(__name__=="__main__"):
+    Test_Student_Palaced_Case1(1001,"Hareesh",20000,"Python developer","Codetru")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+def Test_Student_Palaced_Case1(Eid,Ename,Esal,Design,Company):
+    print("---Employee Information---")
+    print('Eid is:',Eid)
+    print('Ename is:',Ename)
+    print("Esal is:",Esal)
+    print("Designation is:",Design)
+    print("Company is:",Company)
+    print("-------------------------------")
+    print()
+if(__name__=="__main__"):
+    Test_Student_Palaced_Case1(1001,"Hareesh",20000,"Python developer","Codetru")
+    print()
+    Test_Student_Palaced_Case1(1002,"Chaitnaya",43000,"DAD","ATS")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+def Test_Case1():
+    Pid=int(input('Enter the Pid:'))
+    Pname=input("Enter the Pname:")
+    Price=float(input("Enter the price:"))
+    Company=input('Enter the company')
+    print()
+    print("---Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("---------------------------")
+if(__name__=="__main__"):
+    Test_Case1()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+====
+import time 
+def Test_Case1(Pid,Pname,Price,Company):
+    Pid=int(input('Enter the Pid:'))
+    Pname=input("Enter the Pname:")
+    Price=float(input("Enter the price:"))
+    Company=input('Enter the company')
+    print()
+    print("---Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("---------------------------")
+if(__name__=="__main__"):
+    Test_Case1(Pid=None,Pname=None,Price=None,Company=None)
+print()	
+time.sleep(2)
+print("End of an application")
+
+
+Ex5:
+===
+import time 
+def Test_Case1(Pid,Pname,Price,Company):
+    Pid=int(input('Enter the Pid:'))
+    Pname=input("Enter the Pname:")
+    Price=float(input("Enter the price:"))
+    Company=input('Enter the company')
+    print()
+    print("---Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("---------------------------")
+if(__name__=="__main__"):
+    Test_Case1(Pid=1003,Pname="Mobile",Price=25000,Company="LG")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Working with return keyword:
+===========================
+Python supports return keyword while working with functional programming.return is a
+keyword in python.The main objective of return keyword is a function can return 
+another function.Whenever if we are using return keyword inside a function that function 
+must be called inside the print() function otherwise will ge the output as None.
+
+
+Ex1:
+===
+import time 
+def Test_Case1():
+    print('return is keyword not a function in python')
+    print()
+    return "Yes I agree ...."
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case1()
+    print()
+    Test_Case1()
+    print()
+    print(Test_Case1())
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+=======
+C:\Users\Admin\Desktop>Python test1.py
+return is keyword not a function in python
+
+
+return is keyword not a function in python
+
+
+return is keyword not a function in python
+
+
+return is keyword not a function in python
+
+Yes I agree ....
+
+End of an application
+
+
+Ex2:
+===
+import time 
+def Test_Case1():
+    print('return is keyword not a function in python')
+    print()
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case1()
+    print()
+    Test_Case1()
+    print()
+    print(Test_Case1())
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+======
+return is keyword not a function in python
+
+
+return is keyword not a function in python
+
+
+return is keyword not a function in python
+
+
+return is keyword not a function in python
+
+None
+
+End of an application
+
+
+Ex2:
+===
+import time 
+def Test_Case1():
+    pass 
+if(__name__=="__main__"):
+    print(Test_Case1())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+=====
+None
+
+End of an application
+
+
+Ex1:
+===
+import time 
+def Test_Case1():
+    return "Im a bit a danger syntax ..."
+if(__name__=="__main__"):
+    Test_Case1()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+def Test_Case1():
+    return "Im a bit a danger syntax ..."
+if(__name__=="__main__"):
+    print(Test_Case1())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+def Test_Case1(a,b,c):
+    return "Im a bit a danger syntax ..."
+if(__name__=="__main__"):
+    print(Test_Case1(1000,2000,"Python"))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time 
+def Test_Case1(x1,y1):
+    print("The value  of x1 is:",x1)
+    print()
+    print("The value of y1 is:",y1)
+    print()
+    return x1+y1 
+if(__name__=="__main__"):
+    print("The sum of x1 & y1 is:",Test_Case1(1000,2000))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex5:
+===
+import time 
+def Test_Case1(x1,y1):
+    return x1+y1 
+    return x1*y1 
+    return x1/y1 
+    return x1**y1 
+if(__name__=="__main__"):
+    print("The result is:",Test_Case1(10,5))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex6:
+===
+import time 
+def Test_Case1(x1,y1):
+    return (x1+y1,x1-y1,x1*y1,x1%y1,x1**y1,x1//y1)
+   
+if(__name__=="__main__"):
+    print("The result is:",Test_Case1(10,5))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Arguments in funtional programming:
+===================================
+Following are the arguments in python while working with 
+functional programming language.
+
+->Positional argument
+->Default argument
+->Keyword argument
+->Variable length argument
+->Keyword variable length arguments
+
+
+->Positional argument:
+======================
+Positional argument can be represent as it is a combination of 
+formal and actual parameters.While working with Positional argument
+output will display based on position.
+
+
+Ex1:
+====
+import time 
+def Test_Case1(x1,y1,z1):
+    print("The value of x1 is:",x1)
+    print()
+    print("The value iof y1 is:",y1)
+    print()
+    print("The value of z1 is:",z1)
+if(__name__=="__main__"):
+    Test_Case1(120,130,140)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+def Test_Case1(z1,y1,x1):
+    print("The value of x1 is:",x1)
+    print()
+    print("The value iof y1 is:",y1)
+    print()
+    print("The value of z1 is:",z1)
+if(__name__=="__main__"):
+    Test_Case1(120,130,140)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->Default argument:
+===================
+Default argument can be represent as if we are using formal parameters with 
+thier values at time of creating a function.Then it is said to be 
+default argument.Default argument must be placed in last position.
+
+Ex1:
+===
+import time 
+def Test_Product_Case1(Pid=100,Pname,Price,Company):
+    print("----Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("--------------------")
+if(__name__=="__main__"):
+    Test_Product_Case1("Mobile",19000,"Samsung")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+def Test_Product_Case1(Pname,Price,Company,Pid=100):
+    print("----Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("--------------------")
+if(__name__=="__main__"):
+    Test_Product_Case1("Mobile",19000,"Samsung")
+print()
+time.sleep(2)
+print("End of an application")
+
+Ex3:
+===
+import time 
+def Test_Product_Case1(Pname,Company,Pid=100,Price=14000):
+    print("----Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("--------------------")
+if(__name__=="__main__"):
+    Test_Product_Case1("Mobile","Samsung")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+----Product Information----
+Pid is: 100
+Pname is: Mobile
+Price is: 14000
+Company is: Samsung
+--------------------
+
+End of an application
+
+
+Ex4:
+===
+import time 
+def Test_Product_Case1(Pid,Pname,Company,Price=14000):
+    print("----Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("--------------------")
+if(__name__=="__main__"):
+    Test_Product_Case1(1001,"Mobile","Samung",19000)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex5:
+===
+import time 
+def Test_Product_Case1(Pid=1001,Pname="LCD TV",Price=19000,Company="Samsung"):
+    print("----Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("--------------------")
+if(__name__=="__main__"):
+    Test_Product_Case1()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex6:
+===
+import time 
+def Test_Product_Case1(Pid=1001,Pname="LCD TV",Price=19000,Company="Samsung"):
+    print("----Product Information----")
+    print("Pid is:",Pid)
+    print("Pname is:",Pname)
+    print("Price is:",Price)
+    print("Company is:",Company)
+    print("--------------------")
+if(__name__=="__main__"):
+    Test_Product_Case1(1002,"Mobile",29000,"ONE_PLUS")
+print()
+time.sleep(2)
+print("End of an application")
+================================================================================
+->Keyword argument:
+===================
+Keyword argument can be represent as if we are using actaul parameters
+with their values then it is said to be keyword argument.
+
+Ex1:
+===
+import time 
+def Test_Student_Case1(Sid,Sname,Marks,Subject):
+    print("----Student Information----")
+    print("Student_Id is:",Sid)
+    print("Student_Name is:",Sname)
+    print("Student_Marks is:",Marks)
+    print("Subject is:",Subject)
+    print("------------------------------")
+if(__name__=="__main__"):
+    Test_Student_Case1(Sid=1001,Sname="Rahul Sharma",Marks=79,Subject="Python")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+def Test_Student_Case1(Sid=1002,Sname="Ajay",Marks=78,Subject="Django"):
+    print("----Student Information----")
+    print("Student_Id is:",Sid)
+    print("Student_Name is:",Sname)
+    print("Student_Marks is:",Marks)
+    print("Subject is:",Subject)
+    print("------------------------------")
+if(__name__=="__main__"):
+    Test_Student_Case1(Sid=1001,Sname="Rahul Sharma",Marks=79,Subject="Python")
+print()
+time.sleep(2)
+print("End of an application")
+
+->Variable lenght arguments:
+===========================
+Python supports variable length argument.We can define or declare using * followed
+variable_name.The main objective of variable length argument is read zero or more than 
+one number of arguments and perform the operations as per the application reqn.
+
+def function_name(*variable_name):
+     ------
+
+
+Ex1:
+===
+import time 
+def Test_Case1(*a):
+    A=0 
+    for x1 in a:
+        A=A+x1 
+    print("The sum of arguments are:",A)
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case1(100)
+    print()
+    Test_Case1(100,200)
+    print()
+    Test_Case1(100,200,300)
+    print()
+    Test_Case1(100,200,300,400)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+def Test_Case1(*a):
+    print(a)
+  
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case1(100)
+    print()
+    Test_Case1(100,200)
+    print()
+    Test_Case1(100,200,300)
+    print()
+    Test_Case1(100,200,300,400)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+def Test_Case1(*a):
+    for x1 in a:
+        time.sleep(1)
+        print(x1)
+  
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case1(100)
+    print()
+    Test_Case1(100,200)
+    print()
+    Test_Case1(100,200,300)
+    print()
+    Test_Case1(100,200,300,400)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+====
+import time 
+def Test_Case1(*a):
+    for x1 in a:
+        time.sleep(1)
+        print(x1)
+if(__name__=="__main__"):
+    Test_Case1("Rahul","Verma","rahul_12345","_12345","_12345","rahul@gmail.com")
+    print()
+    Test_Case1("Ajay","Verma","ajay_12345","_12346","_12346","ajay@gmail.com")
+    print()
+    Test_Case1("Atul","Verma","atul_12345","_12347","_12347","atul@gmail.com")
+time.sleep(2)
+print("End of an application")
+
+
+Keyword variable length argument:
+===============================
+Python supports keyword variable length argument.We can define or declare KVLA as ** varaible name.
+The main objective of KVLA is read zero or more than one number of arguments in form of key and value pair
+then It is said to keyword variable length argument
+
+
+def Function_Name(**variable_name):
+     ----
+
+
+Ex1:
+===
+import time 
+def Test_Employee_Case1(**a):
+    for x1,y1 in a.items():
+        print(x1,"======",y1)
+if(__name__=="__main__"):
+    Test_Employee_Case1(Eid=1001,Ename="Rahul",Esal=45000,Design="DAD",Company="ATS")
+    print()
+    Test_Employee_Case1(Eid=1002,Ename="Ajay",Esal=57000,Design="DS",Company="TAS")
+    print()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Q1)What is difference between *variable_name and **variable_name
+
+Ex1:
+===
+import time 
+def Test_Case1(*a):
+    print(a)
+print()
+def Test_Case2(**b):
+    print(b)
+if(__name__=="__main__"):
+    Test_Case1(1001,"Rahul",37000,"DAD","ATS")
+    print()
+    Test_Case2(Eid=1001,Ename="Rahul",Esal=37000,Design="DAD",Company="ATS")
+    print()
+time.sleep(2)
+print("End of an application")
+
+Working with nameless or anonymous function:
+=============================================
+
+nameless or anonymous function:
+===============================
+Python supports nameless or anonmyous function.A functon which does have any name 
+to the function then it is said to be nameless or anonymous function.In python we can 
+implement nameless or anonmyous function using lambda
+
+s1=lambda expression1,expression:Business logic
+
+
+Ex1:
+===
+import time 
+s1=lambda x:x*x 
+print("The sqare of a number is:",s1(5))
+print()
+print("The sqaure of a number is:",s1(7.5))
+print()
+print("The square of a number is:",s1(-9))
+print()
+if(__name__=="__main__"):
+    pass 
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+s1=lambda x,y:x+y
+print("The sqare of a number is:",s1(5,17))
+print()
+print("The sqaure of a number is:",s1(7.5,7.9))
+print()
+print("The square of a number is:",s1(123,6))
+print()
+if(__name__=="__main__"):
+    pass 
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+s1=lambda a,b:a if a>b else b
+print("Max object:",s1(5,17))
+print()
+print("Max object:",s1(7.5,7.9))
+print()
+print("Maz object:",s1(123,6))
+print()
+if(__name__=="__main__"):
+    pass 
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+s1=lambda a,b,c:a if a>b and a>c else b if b>c else c
+print("Max object:",s1(5,17,120))
+print()
+print("Max object:",s1(7.5,7.9,123.67))
+print()
+print("Maz object:",s1(123,6,800))
+print()
+if(__name__=="__main__"):
+    pass 
+print()
+time.sleep(2)
+print('End of an application')
+
+Ex5:
+====
+import time 
+s1=lambda a:input("Enter the value of a:")
+print(s1)
+print()
+if(__name__=="__main__"):
+    pass 
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+======
+<function <lambda> at 0x009E07C8>
+
+
+End of an application
+
+
+->filter()
+->map()
+->reduce()
+
+
+Note:
+=====
+The above functions are can be apply for name_full function and 
+nameless function as well.
+
+filter():
+========
+It is a predefine function in python.The main objective of filter()
+function is filter data or information as per the application reqn.
+
+
+filter() function with namefull function:
+=========================================
+
+Ex1:
+===
+import time 
+def Test_Case1(obj1):
+    if(obj1%2==0):
+        return True 
+    else:
+        return False 
+if(__name__=="__main__"):
+    obj1=[1,2,3,4,5,6,7,9,10,11,12,13,14,15]
+    l1=list(filter(Test_Case1,obj1))
+    print("The result is:",l1)
+print()
+time.sleep(2)
+print("End of an application")
+
+filter() function with anonymous function(nameless):
+===================================================
+
+
+Ex1:
+===
+import time 
+obj1=[1,2,3,4,5,6,7,9,10,11,12,13,14,15]
+l1=list(filter(lambda x1:x1%2==0,obj1))
+print("The even numbers from the list is:",l1)
+if(__name__=="__main__"):
+    pass
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+if(__name__=="__main__"):
+   obj1=[1,2,3,4,5,6,7,9,10,11,12,13,14,15]
+   l1=list(filter(lambda x1:x1%2==0,obj1))
+   print("The even numbers from the list is:",l1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->map():
+=======
+It is a predefine function in python.The main objective of map() function is take 
+each object from the list and perform some operations on that object as per the application
+requirement and store into a seprate list.
+
+
+map() function with namefull function:
+======================================
+
+Ex1:
+===
+import time 
+def Test_Case1(obj2):
+    return obj2*5
+if(__name__=="__main__"):
+    obj2=[12,15,17,18,21,22,23,24,25]
+    l1=list(map(Test_Case1,obj2))
+    print("The result is:",l1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+map() function with namelessfunction (Using lambda):
+====================================================
+Ex1:
+===
+import time 
+obj1=[12,13,14,15,16,17,18,19,20]
+if(__name__=="__main__"):
+    l1=list(map(lambda x:x*5,obj1))
+    print("The result is:",l1)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+reduce():
+========
+It is a predefine function in python.The main objective of reduce()
+function is combile python objects as a single entity.reduce() function 
+is present in functool module.
+
+
+Ex1:
+===
+import time 
+from functools import *
+if(__name__=="__main__"):
+    Emp_Salary=[16000,18000,21000,27000,29000]
+    Total_Salary=reduce(lambda a,b:a+b,Emp_Salary)
+    print("The total salary of employees are:",Total_Salary)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+While working with functional programming language we do have following
+types of variables
+
+->global variable
+->local variable
+->How to define global variable inside a function
+
+->global variable:
+================
+Python supports global variable while working with functional programming 
+language.global variable can be represent as a variable which is define or 
+declare outsite the function then it is said to be global variable.The scope of the
+global variable can access any where as per the application reqn.
+
+
+Ex1:
+===
+import time 
+list_one=[20,21,23,27,78,45]
+print(list_one)
+print()
+def Test_Case1():
+    A=0
+    for x1 in range(len(list_one)):
+        A=A+list_one[x1]
+    print("The sum of the list is:",A)
+def Test_Case2():
+    for x in list_one:
+        if(x%2==0):
+            print("Even list objects are:",x)
+def Test_Case3():
+    for y1 in list_one:
+        print(y1)
+def Test_Case4():
+    D=0
+    x=0 
+    while(x<len(list_one)):
+        D=D+list_one[x]
+        x+=1
+    print("The sum of list is:",D)
+    
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case2()
+    print()
+    Test_Case3()
+    print()
+    Test_Case4()
+    print()
+    y=0 
+    while(y<len(list_one)):
+        print(list_one[y])
+        y+=1
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Local variable:
+==============
+Python supports local variable while working with functional programming 
+language.Local variable can be represent as a variable which is define or 
+declare inside the function then it is said to be local variable.The scope of
+local variable can access with in function.
+
+
+Ex1:
+===
+import time 
+def Test_Case1():
+    d1={"Eid":1001,"Ename":"Rahul","Esal":45000,"Design":"DAD","Company":"ATS"}
+    for x1,y1 in d1.items():
+        print(x1,"---",y1)
+def Test_Case2():
+    for m in d1.keys():
+        print(m)
+def Test_Case3():
+    for g in d1.values():
+        print(g)
+def Test_Case4():
+    for z1 in d1.items():
+        print(z1)
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case2()
+    print()
+    Test_Case3()
+    print()
+    Test_Case4()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+def Test_Case1():
+    d1={"Eid":1001,"Ename":"Rahul","Esal":45000,"Design":"DAD","Company":"ATS"}
+    for x1,y1 in d1.items():
+        print(x1,"---",y1)
+def Test_Case2():
+    pass
+   
+def Test_Case3():
+    pass 
+def Test_Case4():
+    pass 
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case2()
+    print()
+    Test_Case3()
+    print()
+    Test_Case4()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->How to define global variable inside the function:
+===================================================
+We can define or declare a global variable inside the function 
+using global keyword followed by variable.
+
+
+Ex1:
+===
+import time 
+def Test_Case1():
+    global Eid
+    Eid=1001 
+    Ename="Rahul Sharma"
+    print("Eid is:",Eid)
+    print()
+    print("Ename is:",Ename)
+def Test_Case2():
+    print("Eid is:",Eid)
+def Test_Case3():
+    print('Eid is:',Eid)
+if(__name__=="__main__"):
+    Test_Case1()
+    print()
+    Test_Case2()
+    print()
+    Test_Case3()
+    print()
+    print("Eid is:",Eid)
+    print()
+   
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Nested function(Closure):
+===============
+Python supports nested functions.It is also known as inner functions which
+can be represent if we are defining or declaring a function inside another 
+function.Then it is said to inner function.
+
+
+def Car():
+     ---
+     def Engine():
+         ----
+     Engine()
+Car()
+
+Ex1:
+===
+import time 
+def Test_Car_Case1():
+    print("Car Implementation ...")
+    def Test_Engine_Case2():
+        print("Engine Implementation ...")
+    Test_Engine_Case2()
+if(__name__=="__main__"):
+    Test_Car_Case1()
+print()
+time.sleep(2)
+print("End of an application")
+
+Name of the language:Python
+Date of release is:16/7/1989
+
+
+Ex1:
+===
+import time 
+def Test_Case1(name):
+    print("Name of the language is:",name)
+    def Test_Case2(day,month,year):
+        print("Date of release is:{}/{}/{}".format(day,month,year))
+    Test_Case2(16,7,1989)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+City is:Hyderabad
+State is:TS
+Pin_Code is:500020
+Country is:India
+==============================================================================
+Pandas module:
+=============
+It is a predefine module in python.The main objective of pandas module to work
+on data sceince applications.It is process or methodlogy to read huge amount of data or
+information and process the data or information and provide the solution as per the application
+requirement.In pandas module we do have DataFrame() which represent the data inform of 
+rows and columns as per the application req
+
+
+How to install pandas in O/S:
+=============================
+pip install pandas  on CMD
+
+
+
+Ex1:
+===
+import time 
+import pandas as pd 
+print("====SUB MODULES=====")
+print(dir(pd))
+print("=======================================")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+import pandas as pd
+import numpy as np 
+d1=pd.DataFrame()
+print()
+print(d1)
+print()
+print(d1.ndim)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+import pandas as pd
+import numpy as np 
+d1=pd.DataFrame([1200,1300,1400,1500,1600])
+print()
+print(d1)
+print()
+print(d1.ndim)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+
+      0
+0  1200
+1  1300
+2  1400
+3  1500
+4  1600
+
+2
+
+End of an application
+
+
+Ex4:
+===
+import time 
+import pandas as pd
+d1=pd.DataFrame([[1200,1300,1400,1500,1600],[1200,1300,1400,1500,1600]])
+print()
+print(d1)
+print()
+
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+=====
+      0     1     2     3     4
+0  1200  1300  1400  1500  1600
+1  1200  1300  1400  1500  1600
+
+End of an application
+
+
+Ex5:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"ONE_PLUS","VIVO"]]
+obj1=pd.DataFrame(Data_Information)
+print('==================================================================')
+print(obj1)
+print("========================================================")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+=====
+==================================================================
+      0       1      2         3     4
+0  1001  Mobile  27000  ONE_PLUS  None
+1  1002  Mobile  37000   SAMSUNG  None
+2  1003  Mobile  47000     APPLE  None
+3  1004  Mobile  57000      Sony  None
+4  1005  Mobile  17000  ONE_PLUS  VIVO
+========================================================
+
+End of an application
+
+
+
+Ex6:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+==================================================================
+     Pid   Pname  Price   Company
+I1  1001  Mobile  27000  ONE_PLUS
+I2  1002  Mobile  37000   SAMSUNG
+I3  1003  Mobile  47000     APPLE
+I4  1004  Mobile  57000      Sony
+I5  1005  Mobile  17000      VIVO
+========================================================
+
+End of an application
+
+
+
+Using head()
+============
+Ex1:
+---
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----Reading the first_rows----")
+print(obj1.head(2))
+time.sleep(2)
+print("End of an application")
+
+
+Using tail():
+=============
+Ex1:
+---
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----Reading the Last_rows()----")
+print(obj1.tail(3))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Using sum():
+============
+
+Ex1:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----sum()----")
+print(obj1.sum())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----sum(1)----")
+print(obj1.sum(1))
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----max()----")
+print(obj1.max())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----min()----")
+print(obj1.min())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex5:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print()
+print()
+print("----count()----")
+print(obj1.count())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->iteritems():It is used to fetch the data column wise
+->iterrows():It is used to fetch the data rows wise
+->itertuples():It is used to fetch the tuple format
+
+
+Ex1:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print("----Fetcing the data----")
+for obj2 in obj1.iteritems():
+    print(obj2)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print("----Fetcing the data----")
+for obj2 in obj1.iterrows():
+    print(obj2)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+====
+import time 
+import pandas as pd
+Data_Information=[[1001,"Mobile",27000,"ONE_PLUS"],[1002,"Mobile",37000,"SAMSUNG"],[1003,"Mobile",47000,"APPLE"],[1004,"Mobile",57000,"Sony"],[1005,"Mobile",17000,"VIVO"]]
+obj1=pd.DataFrame(Data_Information,columns=["Pid","Pname","Price","Company"],index=['I1','I2','I3','I4','I5'])
+print('==================================================================')
+print(obj1)
+print("======================================================================")
+print("----Fetcing the data----")
+for obj2 in obj1.itertuples():
+    print(obj2)
+print()
+time.sleep(2)
+print("End of an application")
+=================================================================================
+
+Application for using pandas module
+===================================
+
+Ex1:
+===
+import time 
+import csv 
+with open("ihub1.csv","w",newline="") as f:
+    d1=csv.writer(f)
+    d1.writerow(["Eid",'Ename',"Esal","Design","Company"])
+    n=int(input("Enter the number of rows:"))
+    for x1 in range(n):
+        Eid=int(input("Enter the Eid:"))
+        Ename=input("Enter the Ename:")
+        Esal=float(input("Enter the Esal:"))
+        Design=input("Enter the Design:")
+        Company=input("Enter the Company:")
+        d1.writerow([Eid,Ename,Esal,Design,Company])
+    print("A csv file is created sucessfully ...")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+=======
+
+C:\Users\Admin\Desktop\Python_Classes>py index1.py
+Enter the number of rows:5
+Enter the Eid:1001
+Enter the Ename:Hareesh
+Enter the Esal:20000
+Enter the Design:Python developer
+Enter the Company:Codetrue
+Enter the Eid:1002
+Enter the Ename:Feroz
+Enter the Esal:36000
+Enter the Design:Python developer
+Enter the Company:Codetrue
+Enter the Eid:1003
+Enter the Ename:S.chaitanya
+Enter the Esal:52000
+Enter the Design:Django developer
+Enter the Company:ATS
+Enter the Eid:1004
+Enter the Ename:Naveen
+Enter the Esal:30000
+Enter the Design:Python developer
+Enter the Company:Techi_lab
+Enter the Eid:1005
+Enter the Ename:Hari
+Enter the Esal:30000
+Enter the Design:Flask developer
+Enter the Company:Perfex tech
+A csv file is created sucessfully ...
+
+End of an application
+
+C:\Users\Admin\Desktop\Python_Classes>
+
+->read_csv(File_name as argument):
+==================================
+It is a predefinefunction in python while working with pandas module or libary.The 
+main objective of this function is to read data from the csv file and perform the operation
+as per the application reqn.
+
+
+Ex1:
+===
+
+
+
+
+Ex2:
+===
+import pandas  as pd 
+import numpy as np 
+import time
+d1=pd.read_csv('ihub1.csv')
+print("--------------Employees Details-----------------")
+print(d1)
+print("--------------------------------------------")
+print()
+print("----First two rows()---")
+print(d1.tail(2))
+print()
+print("----Count()----")
+print(d1.count())
+print()
+for a in d1.iteritems():
+    print(a)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+numpy module:
+============
+It is a predefine module or libary.Numpy means numrical python.Numpy represent the 
+data or information in an array daimention format.Numpy is more faster than list
+data type.Daimentions can  0 to nth daimention
+
+
+How to install numpy:
+-------------------
+pip install numpy
+
+Ex1:
+===
+import numpy as np 
+import time
+print('----SUB_MODULES----')
+print(dir(np))
+print('---------------')
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Sub module of numpy:
+===================
+C:\Users\Admin\Desktop\Python_Classes>py index1.py
+----SUB_MODULES----
+['ALLOW_THREADS', 'AxisError', 'BUFSIZE', 'Bytes0', 'CLIP', 'ComplexWarning', 'DataSource', 'Datetime64', 'ERR_CALL', 'ERR_DEFAULT', 'ERR_IGNORE', 'ERR_LOG', 'ERR_PRINT', 'ERR_RAISE', 'ERR_WARN', 'FLOATING_POINT_SUPPORT', 'FPE_DIVIDEBYZERO', 'FPE_INVALID', 'FPE_OVERFLOW', 'FPE_UNDERFLOW', 'False_', 'Inf', 'Infinity', 'MAXDIMS', 'MAY_SHARE_BOUNDS', 'MAY_SHARE_EXACT', 'MachAr', 'ModuleDeprecationWarning', 'NAN', 'NINF', 'NZERO', 'NaN', 'PINF', 'PZERO', 'RAISE', 'RankWarning', 'SHIFT_DIVIDEBYZERO', 'SHIFT_INVALID', 'SHIFT_OVERFLOW', 'SHIFT_UNDERFLOW', 'ScalarType', 'Str0', 'Tester', 'TooHardError', 'True_', 'UFUNC_BUFSIZE_DEFAULT', 'UFUNC_PYVALS_NAME', 'Uint32', 'VisibleDeprecationWarning', 'WRAP', '_NoValue', '_UFUNC_API', '__NUMPY_SETUP__', '__all__', '__builtins__', '__cached__', '__config__', '__deprecated_attrs__', '__dir__', '__doc__', '__expired_functions__', '__file__', '__getattr__', '__git_version__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_add_newdoc_ufunc', '_distributor_init', '_financial_names', '_globals', '_mat', '_pytesttester', '_version', 'abs', 'absolute', 'add', 'add_docstring', 'add_newdoc', 'add_newdoc_ufunc', 'alen', 'all', 'allclose', 'alltrue', 'amax', 'amin', 'angle', 'any', 'append', 'apply_along_axis', 'apply_over_axes', 'arange', 'arccos', 'arccosh', 'arcsin', 'arcsinh', 'arctan', 'arctan2', 'arctanh', 'argmax', 'argmin', 'argpartition', 'argsort', 'argwhere', 'around', 'array', 'array2string', 'array_equal', 'array_equiv', 'array_repr', 'array_split', 'array_str', 'asanyarray', 'asarray', 'asarray_chkfinite', 'ascontiguousarray', 'asfarray', 'asfortranarray', 'asmatrix', 'asscalar', 'atleast_1d', 'atleast_2d', 'atleast_3d', 'average', 'bartlett', 'base_repr', 'binary_repr', 'bincount', 'bitwise_and', 'bitwise_not', 'bitwise_or', 'bitwise_xor', 'blackman', 'block', 'bmat', 'bool8', 'bool_', 'broadcast', 'broadcast_arrays', 'broadcast_shapes', 'broadcast_to', 'busday_count', 'busday_offset', 'busdaycalendar', 'byte', 'byte_bounds', 'bytes0', 'bytes_', 'c_', 'can_cast', 'cast', 'cbrt', 'cdouble', 'ceil', 'cfloat', 'char', 'character', 'chararray', 'choose', 'clip', 'clongdouble', 'clongfloat', 'column_stack', 'common_type', 'compare_chararrays', 'compat', 'complex128', 'complex64', 'complex_', 'complexfloating', 'compress', 'concatenate', 'conj', 'conjugate', 'convolve', 'copy', 'copysign', 'copyto', 'core', 'corrcoef', 'correlate', 'cos', 'cosh', 'count_nonzero', 'cov', 'cross', 'csingle', 'ctypeslib', 'cumprod', 'cumproduct', 'cumsum', 'datetime64', 'datetime_as_string', 'datetime_data', 'deg2rad', 'degrees', 'delete', 'deprecate', 'deprecate_with_doc', 'diag', 'diag_indices', 'diag_indices_from', 'diagflat', 'diagonal', 'diff', 'digitize', 'disp', 'divide', 'divmod', 'dot', 'double', 'dsplit', 'dstack', 'dtype', 'e', 'ediff1d', 'einsum', 'einsum_path', 'emath', 'empty', 'empty_like', 'equal', 'errstate', 'euler_gamma', 'exp', 'exp2', 'expand_dims', 'expm1', 'extract', 'eye', 'fabs', 'fastCopyAndTranspose', 'fft', 'fill_diagonal', 'find_common_type', 'finfo', 'fix', 'flatiter', 'flatnonzero', 'flexible', 'flip', 'fliplr', 'flipud', 'float16', 'float32', 'float64', 'float_', 'float_power', 'floating', 'floor', 'floor_divide', 'fmax', 'fmin', 'fmod', 'format_float_positional', 'format_float_scientific', 'format_parser', 'frexp', 'frombuffer', 'fromfile', 'fromfunction', 'fromiter', 'frompyfunc', 'fromregex', 'fromstring', 'full', 'full_like', 'gcd', 'generic', 'genfromtxt', 'geomspace', 'get_array_wrap', 'get_include', 'get_printoptions', 'getbufsize', 'geterr', 'geterrcall', 'geterrobj', 'gradient', 'greater', 'greater_equal', 'half', 'hamming', 'hanning', 'heaviside', 'histogram', 'histogram2d', 'histogram_bin_edges', 'histogramdd', 'hsplit', 'hstack', 'hypot', 'i0', 'identity', 'iinfo', 'imag', 'in1d', 'index_exp', 'indices', 'inexact', 'inf', 'info', 'infty', 'inner', 'insert', 'int0', 'int16', 'int32', 'int64', 'int8', 'int_', 'intc', 'integer', 'interp', 'intersect1d', 'intp', 'invert', 'is_busday', 'isclose', 'iscomplex', 'iscomplexobj', 'isfinite', 'isfortran', 'isin', 'isinf', 'isnan', 'isnat', 'isneginf', 'isposinf', 'isreal', 'isrealobj', 'isscalar', 'issctype', 'issubclass_', 'issubdtype', 'issubsctype', 'iterable', 'ix_', 'kaiser', 'kron', 'lcm', 'ldexp', 'left_shift', 'less', 'less_equal', 'lexsort', 'lib', 'linalg', 'linspace', 'little_endian', 'load', 'loads', 'loadtxt', 'log', 'log10', 'log1p', 'log2', 'logaddexp', 'logaddexp2', 'logical_and', 'logical_not', 'logical_or', 'logical_xor', 'logspace', 'longcomplex', 'longdouble', 'longfloat', 'longlong', 'lookfor', 'ma', 'mafromtxt', 'mask_indices', 'mat', 'math', 'matmul', 'matrix', 'matrixlib', 'max', 'maximum', 'maximum_sctype', 'may_share_memory', 'mean', 'median', 'memmap', 'meshgrid', 'mgrid', 'min', 'min_scalar_type', 'minimum', 'mintypecode', 'mod', 'modf', 'moveaxis', 'msort', 'multiply', 'nan', 'nan_to_num', 'nanargmax', 'nanargmin', 'nancumprod', 'nancumsum', 'nanmax', 'nanmean', 'nanmedian', 'nanmin', 'nanpercentile', 'nanprod', 'nanquantile', 'nanstd', 'nansum', 'nanvar', 'nbytes', 'ndarray', 'ndenumerate', 'ndfromtxt', 'ndim', 'ndindex', 'nditer', 'negative', 'nested_iters', 'newaxis', 'nextafter', 'nonzero', 'not_equal', 'numarray', 'number', 'obj2sctype', 'object0', 'object_', 'ogrid', 'oldnumeric', 'ones', 'ones_like', 'os', 'outer', 'packbits', 'pad', 'partition', 'percentile', 'pi', 'piecewise', 'place', 'poly', 'poly1d', 'polyadd', 'polyder', 'polydiv', 'polyfit', 'polyint', 'polymul', 'polynomial', 'polysub', 'polyval', 'positive', 'power', 'printoptions', 'prod', 'product', 'promote_types', 'ptp', 'put', 'put_along_axis', 'putmask', 'quantile', 'r_', 'rad2deg', 'radians', 'random', 'ravel', 'ravel_multi_index', 'real', 'real_if_close', 'rec', 'recarray', 'recfromcsv', 'recfromtxt', 'reciprocal', 'record', 'remainder', 'repeat', 'require', 'reshape', 'resize', 'result_type', 'right_shift', 'rint', 'roll', 'rollaxis', 'roots', 'rot90', 'round', 'round_', 'row_stack', 's_', 'safe_eval', 'save', 'savetxt', 'savez', 'savez_compressed', 'sctype2char', 'sctypeDict', 'sctypes', 'searchsorted', 'select', 'set_numeric_ops', 'set_printoptions', 'set_string_function', 'setbufsize', 'setdiff1d', 'seterr', 'seterrcall', 'seterrobj', 'setxor1d', 'shape', 'shares_memory', 'short', 'show_config', 'sign', 'signbit', 'signedinteger', 'sin', 'sinc', 'single', 'singlecomplex', 'sinh', 'size', 'sometrue', 'sort', 'sort_complex', 'source', 'spacing', 'split', 'sqrt', 'square', 'squeeze', 'stack', 'std', 'str0', 'str_', 'string_', 'subtract', 'sum', 'swapaxes', 'sys', 'take', 'take_along_axis', 'tan', 'tanh', 'tensordot', 'test', 'testing', 'tile', 'timedelta64', 'trace', 'tracemalloc_domain', 'transpose', 'trapz', 'tri', 'tril', 'tril_indices', 'tril_indices_from', 'trim_zeros', 'triu', 'triu_indices', 'triu_indices_from', 'true_divide', 'trunc', 'typecodes', 'typename', 'ubyte', 'ufunc', 'uint', 'uint0', 'uint16', 'uint32', 'uint64', 'uint8', 'uintc', 'uintp', 'ulonglong', 'unicode_', 'union1d', 'unique', 'unpackbits', 'unravel_index', 'unsignedinteger', 'unwrap', 'use_hugepage', 'ushort', 'vander', 'var', 'vdot', 'vectorize', 'version', 'void', 'void0', 'vsplit', 'vstack', 'warnings', 'where', 'who', 'zeros', 'zeros_like']
+---------------
+
+End of an application
+
+C:\Users\Admin\Desktop\Python_Classes>
+
+
+Ex2:
+===
+import numpy as np 
+import time
+s1=np.array(1200)
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import numpy as np 
+import time
+s1=np.array([1000,2000,3000,4000,5000])
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import numpy as np 
+import time
+s1=np.array([1000,2000,3000,4000,5000])
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print("----Using Indexing---")
+print(s1[0])
+print(s1[1])
+print(s1[2])
+print(s1[3])
+print(s1[4])
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex5:
+===
+import numpy as np 
+import time
+s1=np.array([1000,2000,3000,4000,5000])
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print("----Using slice operators---")
+print(s1[0:])
+print()
+print(s1[::-1])
+print()
+print(s1[0:3])
+print()
+print(s1[-1:-4:-1])
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex6:
+===
+import numpy as np 
+import time
+s1=np.array([[1000,2000,3000,4000,5000],[10,20,30,40,50]])
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex7:
+===
+import numpy as np 
+import time
+s1=np.array([[1000,2000,3000,4000,5000],[10,20,30,40,50]])
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+print("----TWO DIAMENTIONAL ARRAY----")
+print(s1[0][3])
+print()
+print(s1[1][3])
+print()
+time.sleep(2)
+print('End of an application')
+
+Ex8:
+===
+import numpy as np 
+import time
+s1=np.array([[[1000,2000,3000,4000,5000],[10,20,30,40,50]]])
+print("The value of s1 is:",s1)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+1000 2000 3000 4000 5000
+10    20   30   40   50
+
+==========================================================================
+
+shape:
+=====
+It is an attribute in numpy.The main objective of shape attribute
+is to know how many elements and diamention are there in our python 
+script.
+
+
+Ex1:
+===
+import time 
+import numpy as np
+s1=np.array([[1,2,3,4,5],[3,5,6,2,1]])
+print()
+print(s1)
+print()
+d2=s1.shape 
+print("The result is:",d2)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+import numpy as np
+s1=np.array([[1,2,3,4,5],[3,5,6,2]])
+print()
+print(s1)
+print()
+d2=s1.shape 
+print("The result is:",d2)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+=======
+test1.py:3: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  s1=np.array([[1,2,3,4,5],[3,5,6,2]])
+
+[list([1, 2, 3, 4, 5]) list([3, 5, 6, 2])]
+
+The result is: (2,)
+
+The daimentions are: 1
+
+End of an application
+
+
+reshape():
+==========
+
+Ex1:
+===
+import time 
+import numpy as np
+s1=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print()
+print(s1)
+print()
+d2=s1.reshape(6,2)
+print("The result is:",d2)
+print()
+print("The daimentions are:",s1.ndim)
+print()
+time.sleep(2)
+print("End of an application")
+
+OUTPUT:
+------
+[ 1  2  3  4  5  6  7  8  9 10 11 12]
+
+The result is: [[ 1  2]
+ [ 3  4]
+ [ 5  6]
+ [ 7  8]
+ [ 9 10]
+ [11 12]]
+
+The daimentions are: 1
+
+End of an application
+
+
+Ex2:
+===
+import time 
+import numpy as np
+s1=np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+print()
+print(s1)
+print()
+d2=s1.reshape(4,3)
+print("The result is:",d2)
+print()
+print("The daimentions are:",s1.ndim)
+for x1 in d2:
+    for y1 in x1:
+        print(y1,end=" ")
+    print()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+import numpy as np
+s1=np.array([1,2,3,4,5,6,7,8,9,10,11,12],ndmin=9)
+print(s1)
+print()
+print(s1.ndim)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+My name is :Rahul Verma
+Date of Birth:17/7/1998
+
+
+5
+
+A   A   A  A  A 
+A   A   A  A  A 
+A   A   A  A  A 
+A   A   A  A  A 
+A   A   A  A  A 
+
+
+===================
+EID   ENAME    ESAL
+===================
+1001   A        100
+1002   B        200
+1003   C        300
+====================
+
+===============================================================================
+Local variable in OOPL:
+======================
+Local variable can be define or declare with in block.The scope of the
+local variable can access with in block.
+
+Ex1:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        A=12000 
+        B=13000 
+        C=14000 
+        D=15000 
+        print(A,B,C,D)
+    def m1(self):
+        a=1200 
+        b=1400
+        c=1600 
+        d=1800 
+        print(a,b,c,d)
+    @classmethod 
+    def m2(cls):
+        X1='A'
+        X2='B'
+        X3='C'
+        X4='D'
+        print(X1,X2,X3,X4)
+    @staticmethod 
+    def m3():
+        Y1='a'
+        Y2='b'
+        Y3='c'
+        Y4='d'
+        print(Y1,Y2,Y3,Y4)
+i1=I_HUB()
+print()
+i1.m1()
+print()
+i1.m2()
+print()
+i1.m3()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        A=12000 
+        B=13000 
+        C=14000 
+        D=15000 
+        print(A,B,C,D)
+    def m1(self):
+        a=1200 
+        b=1400
+        c=1600 
+        d=1800 
+        print(A,B,C,D)
+        print(a,b,c,d)
+    @classmethod 
+    def m2(cls):
+        X1='A'
+        X2='B'
+        X3='C'
+        X4='D'
+        print(X1,X2,X3,X4)
+    @staticmethod 
+    def m3():
+        Y1='a'
+        Y2='b'
+        Y3='c'
+        Y4='d'
+        print(Y1,Y2,Y3,Y4)
+i1=I_HUB()
+print()
+i1.m1()
+print()
+i1.m2()
+print()
+i1.m3()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+class I_HUB:
+    Company_Name="Stic Soft"
+    def __init__(self,Eid,Ename,Esal,Design):
+        self.Eid=Eid 
+        self.Ename=Ename 
+        self.Esal=Esal 
+        self.Design=Design 
+    def m1(self):
+        print("----Employees Information----")
+        print("Eid is:",self.Eid)
+        print('Ename is:',self.Ename)
+        print("Esal is:",self.Esal)
+        print("Design is:",self.Design)
+
+print("====WELCOME TO IHUB PLACEMENTS=====")
+i1=I_HUB(1001,"Vineela",42000,"Python developer")
+i1.m1()
+print("Company name is:",I_HUB.Company_Name)
+print()
+i2=I_HUB(1002,"Madhu",42000,"FastAPI developer")
+i2.m1()
+print("Company name is:",I_HUB.Company_Name)
+print()
+i3=I_HUB(1003,"Rajesh",42000,"Django developer")
+i3.m1()
+print("Company name is:",I_HUB.Company_Name)
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+What is self?
+============
+self is a default variable.The main objective of self is define or declare
+application variables inside the constructor as per application requirement.
+
+->self is a default variable after declare instance variable inside the constructor.default
+variable is used to access the values of an object inside the instance method
+
+
+Ex1:
+==
+import time 
+class Product_Class:
+    def __init__(self):
+        self.Pid=1001 
+        self.Pname="Mobile"
+        self.Price=29000
+    def m1(self):
+        print("Pid is:",self.Pid)
+        print("Pname is:",self.Pname)
+        print("Price is:",self.Price)
+p1=Product_Class()
+print()
+p1.m1()
+time.sleep(2)
+print("End of an application")
+
+
+
+GC module:
+==========
+Python supports GC module which stands garbage collector.It is predefine module in 
+python which is enabled by default.The main objective of GC module is to destroy the 
+useless objects as per the application reqn.
+
+
+
+What is useless object?
+======================
+An object which is not pointing to the class and their properties then it is said
+to be uselss object
+
+
+
+What is useful object?
+=====================
+An object which is pointing to the class and its properties then it is said to 
+be usefull object.
+
+
+class A:
+    ----
+a=A() --->An object in python  --->use_full object
+
+a=None
+del a
+
+
+Ex1:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+i1=I_HUB()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Destructor:
+===========
+Destructor is a specail method in python.We can define or declare 
+as def __del__(self): .The main objective of destrcutor is to clean up 
+activity of memory block.
+
+
+
+Ex1:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+    def __del__(self):
+        print("Cleaning the memory management ...")
+i1=I_HUB()
+print()
+i1=None
+time.sleep(2)
+print("End of an application")
+
+
+
+Ex2:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+    def __del__(self):
+        print("Cleaning the memory management ...")
+i1=I_HUB()
+print()
+del i1
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+    def __del__(self):
+        print("Cleaning the memory management ...")
+i1=I_HUB()
+i2=i1 
+i3=i2 
+i4=i3 
+i5=i4 
+i6=i5 
+del i1 
+time.sleep(2)
+print("I1 refernce is gone object is there")
+print()
+del i2 
+time.sleep(2)
+print("I2 refernce is gone object is there")
+print()
+del i3 
+time.sleep(2)
+print("I3 refernce is gone object is there")
+print()
+del i4 
+time.sleep(2)
+print("I4 refernce is gone object is there")
+print()
+del i5
+time.sleep(2)
+print("I5 refernce is gone object is there")
+print()
+del i6 
+print()
+time.sleep(2)
+print('End of an application')
+
+
+OUTPUT:
+======
+Advance Python session is goping on ...
+I1 refernce is gone object is there
+
+I2 refernce is gone object is there
+
+I3 refernce is gone object is there
+
+I4 refernce is gone object is there
+
+I5 refernce is gone object is there
+
+Cleaning the memory management ...
+
+End of an application
+
+
+
+Ex2:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+    def __del__(self):
+        print("Cleaning the memory management ...")
+i1=I_HUB()
+i1=None
+i2=i1 
+i3=i2 
+i4=i3 
+i5=i4 
+i6=i5 
+time.sleep(2)
+print("I1 refernce is gone object is there")
+print()
+del i2 
+time.sleep(2)
+print("I2 refernce is gone object is there")
+print()
+del i3 
+time.sleep(2)
+print("I3 refernce is gone object is there")
+print()
+del i4 
+time.sleep(2)
+print("I4 refernce is gone object is there")
+print()
+del i5
+time.sleep(2)
+print("I5 refernce is gone object is there")
+print()
+del i6 
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+    def __del__(self):
+        print("Cleaning the memory management ...")
+i1=[I_HUB(),I_HUB(),I_HUB(),I_HUB(),I_HUB()]
+i1=None 
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+====
+import time 
+class I_HUB:
+    def __init__(self):
+        print("Advance Python session is goping on ...")
+    def __del__(self):
+        print("Cleaning the memory management ...")
+i1=[I_HUB(),I_HUB(),I_HUB(),I_HUB(),I_HUB()]
+del i1
+print()
+time.sleep(2)
+print("End of an application")
+
+================================================================================
+Composition and Aggregation
+==========================
+
+Composition:
+===========
+Composition is also known as strong relationship.The relationship between
+an instance variable and object is called strong relationship or composition
+or tightly coupled relationship
+
+
+Aggregation:
+===========
+Aggregation is also known as the relationship between an static variable and 
+an object is called Aggregation or losely coupled relationship.
+
+
+Ex1:
+===
+import time 
+class I_HUB:
+    Company_Name="IBM"
+    def __init__(self,Eid,Ename,Esal,Design):
+        self.Eid=Eid 
+        self.Ename=Ename 
+        self.Esal=Esal 
+        self.Design=Design 
+    def m1(self):
+        print("----Employee Information----")
+        print("Eid is:",self.Eid)
+        print("Ename is:",self.Ename)
+        print("Esal is:",self.Esal)
+        print("Designatio is:",self.Design)
+i1=I_HUB(1001,"Ajay",45000,"Python developer")
+i1.m1()
+print("Company name is:",I_HUB.Company_Name)
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+Inheritance in python:
+=====================
+Python suppoerts inheritance methodlogy.It is process or methodlogy to extend
+from one class to another class.The main objective of inheritance methodlogy is to 
+provide the code reusability.Following types of inheritance in python.
+
+
+->Single Inheritance
+->Multilevel inheritance
+->Hierarchical inheritance 
+->Multiple inheritance 
+->Hybrid inheritance 
+
+
+->Single Inheritance:
+=====================
+Python supports single inheritance.It is process or methodlogy to extend from one
+parent class to only one child class.Then it is said to be single inheritance
+
+
+class Quality_Thought:
+    -----
+class I_HUB(Quality_Thought):
+      -----
+
+
+Ex1:
+===
+import time 
+class Quality_Thought:
+    def m1(self):
+        print("It is parent company ...")
+class I_HUB(Quality_Thought):
+    def m2(self):
+        print("It is child company")
+print()
+q1=Quality_Thought()
+q1.m1()
+i1=I_HUB()
+print()
+i1.m1()
+print()
+i1.m2()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->Multilevel inheritance:
+=========================
+Python supports multilevel inheritance.It process or methodlogy from one parent class to 
+one child class continously as per the application reqn.
+
+
+class A:
+   ---
+class B(A):
+    --
+class C(B):
+  ---
+class D(C):
+    ----
+
+
+Ex1:
+===
+import time 
+class I_HUB1:
+    def m1(self):
+        print("IHUB one services ...")
+class I_HUB2(I_HUB1):
+    def m2(self):
+        print("IHUB two services ...")
+class I_HUB3(I_HUB2):
+    def m3(self):
+        print("IHUB three services ...")
+class I_HUB4(I_HUB3):
+    def m4(self):
+        print("IHUB four services ...")
+i1=I_HUB2()
+i1.m1()
+i1.m2()
+print()
+i2=I_HUB3()
+i2.m1()
+i2.m2()
+i2.m3()
+print()
+i3=I_HUB4()
+i3.m1()
+i3.m2()
+i3.m3()
+i3.m4()
+print()
+time.sleep(2)
+print('End of an application....')
+
+
+->Hierarchical inheritance:
+=======================
+Python supports HI.It is process or methodlogy to extend from one parent class to one
+or more than one parent class.Then it is said to be HI inheritance.
+
+
+class Mother_Class:
+      ---
+class Son1(Mother_Class):
+       ---
+class Son2(Mother_Class):
+      ---
+class Son3(Mother_Class):
+     ---
+
+Ex1:
+===
+import time 
+class Mother_Class:
+    def m1(self):
+        print("Mother class implementation ...")
+class Son1(Mother_Class):
+    def m2(self):
+        print("Son1 one class implementation ...")
+class Son2(Mother_Class):
+    def m3(self):
+        print("Son2 two class implementation ...")
+class Son3(Mother_Class):
+    def m4(self):
+        print("Son3 three class implementation ...")
+s1=Son1()
+s1.m1()
+s1.m2()
+print()
+s2=Son2()
+s2.m1()
+s2.m3() 
+print()
+s3=Son3()
+s3.m1()
+s3.m4()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+->Multiple inheritance :
+=======================
+Python supports multiple inheritance.It is process or methodlogy more than one
+parent classes with single child class.Then it is said to be multiple inheritance.
+
+
+class Parent_One:
+    ---
+class Parent_Two:
+   ---
+class Parent_Three:
+   ---
+class Parent_Four:
+     ---
+class Child_One(Parent_One,Parent_Two,Parent_Three,Parent_Four):
+   ----
+
+
+Ex1:
+===
+import time 
+class Parent_One:
+    def m1(self):
+        print("Parent one class implementation")
+class Parent_Two:
+    def m2(self):
+        print("Parent two class implementation ")
+class Parent_Three:
+    def m3(self):
+        print("Parent three class implementation")
+class Parent_Four:
+    def m4(self):
+        print("Parent four class implementation")
+class Child_one(Parent_One,Parent_Two,Parent_Three,Parent_Four):
+    def m5(self):
+        print("Child one class implemenation")
+c1=Child_one()
+c1.m1()
+c1.m2()
+c1.m3()
+c1.m4()
+c1.m5()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+While working with multiple inheritance if methods are same then we can apply
+MRO algorithm.As per MRO algorithm.
+
+->First it will search in child class if the methods are same.If there
+is not implementation in child class it will search based on order what 
+you have provided in our python script.
+
+->MRO follows left to right methodlogy
+
+
+
+Ex1:
+===
+import time 
+class Parent_One:
+    def m1(self):
+        print("Parent one class implementation")
+class Parent_Two:
+    def m1(self):
+        print("Parent two class implementation ")
+class Parent_Three:
+    def m1(self):
+        print("Parent three class implementation")
+class Parent_Four:
+    def m1(self):
+        print("Parent four class implementation")
+class Child_one(Parent_One,Parent_Two,Parent_Three,Parent_Four):
+    def m1(self):
+        print("Child one class implemenation")
+c1=Child_one()
+c1.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+class Parent_One:
+    def m1(self):
+        print("Parent one class implementation")
+class Parent_Two:
+    def m1(self):
+        print("Parent two class implementation ")
+class Parent_Three:
+    def m1(self):
+        print("Parent three class implementation")
+class Parent_Four:
+    def m1(self):
+        print("Parent four class implementation")
+class Child_one(Parent_One,Parent_Two,Parent_Three,Parent_Four):pass
+c1=Child_one()
+c1.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+class Parent_One:
+    def m1(self):
+        print("Parent one class implementation")
+class Parent_Two:
+    def m1(self):
+        print("Parent two class implementation ")
+class Parent_Three:
+    def m1(self):
+        print("Parent three class implementation")
+class Parent_Four:
+    def m1(self):
+        print("Parent four class implementation")
+class Child_one(Parent_Four,Parent_Two,Parent_Three,Parent_One):pass
+c1=Child_one()
+c1.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+class Parent_One:
+    def m1(self):
+        print("Parent one class implementation")
+class Parent_Two:pass
+class Parent_Three:pass
+class Parent_Four:pass
+class Child_one(Parent_Four,Parent_Two,Parent_Three,Parent_One):pass
+c1=Child_one()
+c1.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Hybrid inheritance:
+==================
+Python supports hybrid inheritance.It is process or methodlogy combination or 
+single,multiple,multilevel,HI
+
+
+mro():
+=====
+It is a predefined function in python.The main objective of 
+this mro() function is to display the mro() of particular class
+as per the application reqn.
+
+
+Ex1:
+===
+import time 
+class A_Class:pass 
+class B_Class(A_Class):pass 
+class C_Class(A_Class):pass 
+class D_Class(B_Class,C_Class):pass 
+print()
+print('---MRO OF A CLASS----')
+print(A_Class.mro())
+print()
+print("---MRO OF B CLASS----")
+print(B_Class.mro())
+print()
+print("---MRO OF C CLASS----")
+print(C_Class.mro())
+print()
+print("---MRO OF D CLASS---")
+print(D_Class.mro())
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+---MRO OF A CLASS----
+[<class '__main__.A_Class'>, <class 'object'>]
+
+---MRO OF B CLASS----
+[<class '__main__.B_Class'>, <class '__main__.A_Class'>, <class 'object'>]
+
+---MRO OF C CLASS----
+[<class '__main__.C_Class'>, <class '__main__.A_Class'>, <class 'object'>]
+
+---MRO OF D CLASS---
+[<class '__main__.D_Class'>, <class '__main__.B_Class'>, <class '__main__.C_Class'>, <class '__main__.A_Class'>, <class 'object'>]
+
+End of an application
+
+===============================================================================
+Working with super() keyword:
+============================
+super is a keyword in python.The main objective of super() keyword
+is to access the parent memebers in its child classes.Parent members 
+can be methods or variables.
+
+Ex1:
+===
+import time 
+class Person_Class:
+    def __init__(self,name,age):
+        self.name=name 
+        self.age=age 
+    def m1(self):
+        print("Name is:",self.name)
+        print("Age is:",self.age)
+class Employee_Class(Person_Class):
+    def __init__(self,name,age,eid,esal,design):
+        super().__init__(name,age)
+        self.eid=eid 
+        self.esal=esal 
+        self.design=design 
+    def m2(self):
+        super().m1()
+        print("Eid is:",self.eid)
+        print("Esal is:",self.esal)
+        print("Design is:",self.design)
+class Student_Class(Person_Class):
+    def __init__(self,name,age,sid,subject,marks):
+        super().__init__(name,age)
+        self.sid=sid 
+        self.subject=subject
+        self.marks=marks 
+    def m3(self):
+        super().m1()
+        print("Sid is:",self.sid)
+        print("Subject is:",self.subject)
+        print("Marks are:",self.marks)
+class Teacher_Class(Person_Class):
+    def __init__(self,name,age,subject,salary):
+        super().__init__(name,age)
+        self.subject=subject 
+        self.salary=salary
+    def m4(self):
+        super().m1()
+        print("Subject is:",self.subject)
+        print("Salary is:",self.salary)
+e1=Employee_Class('Sharma',21,1001,37000,'Python developer')
+e1.m2()
+print()
+s1=Student_Class("Ajay",19,3001,"Python",75)
+s1.m3()
+print()
+t1=Teacher_Class("John",34,"FTPD",85000)
+t1.m4()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Can we access all four methods of parent class in child class in child class
+constructor:
+============================================================================
+Yes can we can access all four methods in child class constructor using super()
+keyword.
+
+
+Ex1:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("This is IHUB one services")
+    def m1(self):
+        print("This is IHUB two servcies")
+    @classmethod 
+    def m2(cls):
+        print("This is IHUB three services")
+    @staticmethod 
+    def m3():
+        print("This is IHUB four services")
+class I_HUB1(I_HUB):
+    def __init__(self):
+        super().__init__()
+        super().m1()
+        super().m2()
+        super().m3()
+i1=I_HUB1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Can we access all four methods of parent class in child class in child class
+Instance method:
+============================================================================
+Yes can we can access all four methods in child class instance method using super()
+keyword.
+
+
+Ex1:
+===
+import time 
+class I_HUB:
+    def __init__(self):
+        print("This is IHUB one services")
+    def m1(self):
+        print("This is IHUB two servcies")
+    @classmethod 
+    def m2(cls):
+        print("This is IHUB three services")
+    @staticmethod 
+    def m3():
+        print("This is IHUB four services")
+class I_HUB1(I_HUB):
+    def info(self):
+        super().__init__()
+        super().m1()
+        super().m2()
+        super().m3()
+i1=I_HUB1()
+i1.info()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+class A_Class:
+    def m1(self):
+        print("A class implmentation ...")
+class B_Class(A_Class):
+    def m1(self):
+        print("B class implementation ...")
+class C_Class(B_Class):
+    def m1(self):
+        print("C class implemenation")
+class D_Class(C_Class):
+    def m1(self):
+        print('D class implementation')
+class E_Class(D_Class):
+    def m1(self):
+        A_Class.m1(self)
+e=E_Class()
+e.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+class A_Class:
+    def m1(self):
+        print("A class implmentation ...")
+class B_Class(A_Class):
+    def m1(self):
+        print("B class implementation ...")
+class C_Class(B_Class):
+    def m1(self):
+        print("C class implemenation")
+class D_Class(C_Class):
+    def m1(self):
+        print('D class implementation')
+class E_Class(D_Class):
+    def m1(self):
+        super(B_Class,self).m1()
+       
+e=E_Class()
+e.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+class A_Class:
+    def m1(self):
+        print("A class implmentation ...")
+class B_Class(A_Class):
+    def m1(self):
+        print("B class implementation ...")
+class C_Class(B_Class):
+    def m1(self):
+        print("C class implemenation")
+class D_Class(C_Class):
+    def m1(self):
+        print('D class implementation')
+class E_Class(D_Class):
+    def m1(self):
+        super(B_Class,self).m1()
+        print()
+        A_Class.m1(self)
+       
+e=E_Class()
+e.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex5:
+===
+import time 
+class I_HUB1:
+    Company_Name="IHUB IT Services"
+    def __init__(self):
+        self.Ename="Atul Sharma"
+class I_HUB2(I_HUB1):
+    def m1(self):
+        print(I_HUB2.Company_Name)
+        print(super().Company_Name)
+        print(super().Ename)
+i1=I_HUB2()
+i1.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex6:
+===
+import time 
+class I_HUB1:
+    Company_Name="IHUB IT Services"
+    def __init__(self):
+        self.Ename="Atul Sharma"
+class I_HUB2(I_HUB1):
+    def m1(self):
+        print(I_HUB2.Company_Name)
+        print(super().Company_Name)
+        print(self.Ename)
+i1=I_HUB2()
+i1.m1()
+print()
+time.sleep(2)
+print('End of an application')
+
+=============================================================================
+File handling in python
+=======================
+Python supports file handling.It is a permenent storage container to store
+limited data or information.
+
+
+While working with file handling we do have following functions
+
+->open(para1,para):It is used to open the file
+->close():It is used to close the file
+->name:It is an attribute which is used to know the name of the file
+->mode:It is an attribute whicn is used to know the mode of the file
+->closed:It used to know wheather file is closed or not
+->readable():It is used to know wheather file is readable or not
+->writable():It is used to know wheather file is writable or not
+
+
+We can insert two types of data or information into a file
+
+->Alpha numerical data 
+->binary data
+
+
+To insert alpha numerical data or information we do have following 
+modes
+
+->r --->only read mode
+->w --->only write mode
+->a--->append mode
+->x--->exclusive mode
+->r+ --->read and write mode
+->w+ --->write and read mode
+->a+ --->append and read mode
+->x+ --->exclusive and read mode
+
+
+To insert binary data we do have following modes
+=================================================
+
+->rb --->only read mode
+->wb --->only write mode
+->ab--->append mode
+->xb--->exclusive mode
+->r+b--->read and write mode
+->w+b --->write and read mode
+->a+b --->append and read mode
+->x+b--->exclusive and read mode
+
+
+Ex1:
+===
+import time 
+f1=open("Ihub_placement.txt","r")
+print()
+print("====File information====")
+print("File name is:",f1.name)
+print("Mode of the file is:",f1.mode)
+print("File is closed or not:",f1.closed)
+print("File is readable or not:",f1.readable())
+print("File is writable or not:",f1.writable())
+print("======================================")
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+f1=open("Ihub_placement.txt","r+")
+print()
+print("====File information====")
+print("File name is:",f1.name)
+print("Mode of the file is:",f1.mode)
+print("File is closed or not:",f1.closed)
+print("File is readable or not:",f1.readable())
+print("File is writable or not:",f1.writable())
+print("======================================")
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+f1=open("Ihub_placement.txt","w+")
+print()
+print("====File information====")
+print("File name is:",f1.name)
+print("Mode of the file is:",f1.mode)
+print("File is closed or not:",f1.closed)
+print("File is readable or not:",f1.readable())
+print("File is writable or not:",f1.writable())
+print("======================================")
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+While working with file handling in python we do have following functions
+to create and insert the data or information into a file.
+
+->write()
+->writelines()
+
+->write():
+========
+It is a predefine function in python while working with file handling.The
+main objective of write() function is create a new file with its constent as
+per the application reqn. 
+
+
+Ex1:
+===
+import time 
+f1=open("ihub1.txt","w")
+f1.write('12345\n')
+f1.write('54321\n')
+f1.write('22331\n')
+f1.write('66441\n')
+print()
+print('A file with its content is created successfully on desktop')
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+f1=open("ihub1.txt","w")
+f1.write('A\n')
+f1.write('B\n')
+f1.write('C\n')
+f1.write('D\n')
+print()
+print('A file with its content is created successfully on desktop')
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+f1=open("ihub1.txt","a")
+f1.write('a\n')
+f1.write('b\n')
+f1.write('c\n')
+f1.write('d\n')
+print()
+print('A file with its content is created successfully on desktop')
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+f1=open("ihub1.txt","x")
+f1.write('a\n')
+f1.write('b\n')
+f1.write('c\n')
+f1.write('d\n')
+print()
+print('A file with its content is created successfully on desktop')
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex5:
+===
+import time 
+f1=open("ihub2.txt","x")
+f1.write('a\n')
+f1.write('b\n')
+f1.write('c\n')
+f1.write('d\n')
+print()
+print('A file with its content is created successfully on desktop')
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+writelines():
+============
+It is a predefine function in python.The main objective of writelines() function
+is to objects with it properties.While inserting the objects into a file each element 
+of an object must be in string format.
+
+
+Ex1:
+===
+import time 
+f1=open("ihub3.txt","w")
+D1=["1001\n","Mobile\n","25000\n","Samsung\n","12/12/2023\n","12/12/2024\n"]
+f1.writelines(D1)
+print("File is created successfully ...")
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+f1=open("ihub3.txt","w")
+D1=["1001\n","M1\n","25001\n","Samsung\n","12/12/2023\n","12/12/2024\n"]
+D2=["1002\n","M2\n","25002\n","Samsung\n","12/12/2023\n","12/12/2024\n"]
+D3=["1003\n","M3\n","25003\n","Samsung\n","12/12/2023\n","12/12/2024\n"]
+D4=["1004\n","M4\n","25004\n","Samsung\n","12/12/2023\n","12/12/2024\n"]
+D5=["1005\n","M5\n","25005\n","Samsung\n","12/12/2023\n","12/12/2024\n"]
+f1.writelines(D1)
+f1.writelines(D2)
+f1.writelines(D3)
+f1.writelines(D4)
+f1.writelines(D5)
+print("File is created successfully ...")
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+If you want to read the content or data or information from file to 
+console or application console we do have following function.
+
+->read():It is used to read complete content from the file
+->read(number of characters):It is used to read number of characters from the file
+->readline():It is used to read one line from the file
+->readlines():It is used to read one line and perform the operation and after performing
+the operations goes to next line
+
+
+Ex1:
+===
+import time 
+f1=open("ihub3.txt","r")
+obj1=f1.read()
+print('File name is:',f1.name)
+print('----------------------')
+print(obj1)
+print('------------------')
+print()
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+f1=open("ihub3.txt","r")
+obj1=f1.read(2)
+print('File name is:',f1.name)
+print('----------------------')
+print(obj1)
+print('------------------')
+print()
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex3:
+===
+import time 
+f1=open("ihub3.txt","r")
+obj1=f1.readline()
+print('File name is:',f1.name)
+print('----------------------')
+print(obj1,end=" ")
+print('------------------')
+print()
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+f1=open("ihub3.txt","r")
+obj1=f1.readlines()
+print('File name is:',f1.name)
+print('----------------------')
+print(obj1)
+print()
+for x1 in obj1:
+    print(x1,end=' ')
+print()
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+->tell()
+->seek()
+
+
+Note:
+=====
+Bydefault file pointer position is 0 while reading the data from the file.
+
+->tell():
+========
+It is a predefine function while working with file handling.The main objective of
+tell() function is display the current position of the file pointer.File pointer position is 0
+bydefault.
+
+
+
+Ex1:
+===
+import time 
+f1=open("ihub3.txt","r")
+print("The current position is:",f1.tell())
+obj1=f1.read(3)
+print(obj1)
+print()
+print("The current position of file pointer is:",f1.tell())
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+
+OUTPUT:
+=======
+The current position is: 0
+100
+
+The current position of file pointer is: 3
+End of an application
+
+
+->seek():
+=======
+It is a predefine function in python.The main objective of this 
+function is to change the position of the file pointer.
+
+
+Ex1:
+===
+import time 
+f1=open("ihub3.txt","r")
+print("The current position is:",f1.tell())
+obj1=f1.read(3)
+print()
+print(obj1)
+print()
+print("The current position is:",f1.tell())
+print()
+f1.seek(1)
+print("The current position is:",f1.tell())
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+The current position is: 0
+
+100
+
+The current position is: 3
+
+The current position is: 1
+
+End of an application
+
+
+Creating a file with with statement:
+===================================
+We can create a file a with with statement.The main objective of 
+this is approach file is closed automatically after perform the operations
+
+
+with open("file_name","mode of the file") as f:
+   ----
+
+
+Ex1:
+===
+import time 
+with open("ihub3.txt","r") as f:
+    print('===File information===')
+    print('File name is:',f.name)
+    print("Mode of the file is:",f.mode)
+    print("File is closed or not:",f.closed)
+    print("File is readable or not:",f.readable())
+    print("File is writable or not:",f.writable())
+print()
+print("File is closed or not:",f.closed)
+print()
+time.sleep(2)
+print('End of an application')
+
+================================================================================
+Pickling(Packing) and unpickling(Unpacking) in python:
+=====================================================
+
+
+Pickling(Packing):
+=================
+Python supports pickling methodlogy.It is process or methodlogy to store the 
+object properties into a file in binary format.Then it is said to be
+Pickling(packing).In python we do have a module called pickle module.Inside 
+pickle module we do have a sub module called dump(file_name,obj1).
+
+
+Ex1:
+===
+import time 
+import pickle 
+class Train_Information:
+    def __init__(self,tno,tname,arrtime,depttime,date,source,destinaion):
+        self.tno=tno 
+        self.tname=tname 
+        self.arrtime=arrtime
+        self.depttime=depttime 
+        self.date=date 
+        self.source=source 
+        self.destination=destinaion
+    def m1(self):
+        print("====Train_Information====")
+        print('Tno is:',self.tno)
+        print("Tname is:",self.tname)
+        print("Arrtime is:",self.arrtime)
+        print("Depttime is:",self.depttime)
+        print("Date is:",self.date)
+        print("Source is:",self.source)
+        print("Destination is:",self.destination)
+print()
+print("====WELCOME TO IHUB FOR PICKING IN PYTHON=====")
+with open("ihub1.txt","wb") as f:
+    t1=Train_Information(12345,"RE","11:00 AM IST","12:00 PM IST","12/12/2023","Hyderabad","Delhi")
+    pickle.dump(t1,f)
+    print()
+    print("Pickling process is done ....")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+====WELCOME TO IHUB FOR PICKING IN PYTHON=====
+
+Pickling process is done ....
+
+End of an application
+
+
+unpickling(Unpacking):
+=====================
+Python supports unpickling or unpicking.It is the process or methodlogy to read the 
+binary data from the file to console or application console in actual format.Inside the 
+pickle module we do have a sub module called load(f).
+
+
+Ex1:
+===
+import time 
+import pickle 
+class Train_Information:
+    def __init__(self,tno,tname,arrtime,depttime,date,source,destinaion):
+        self.tno=tno 
+        self.tname=tname 
+        self.arrtime=arrtime
+        self.depttime=depttime 
+        self.date=date 
+        self.source=source 
+        self.destination=destinaion
+    def m1(self):
+        print("====Train_Information====")
+        print('Tno is:',self.tno)
+        print("Tname is:",self.tname)
+        print("Arrtime is:",self.arrtime)
+        print("Depttime is:",self.depttime)
+        print("Date is:",self.date)
+        print("Source is:",self.source)
+        print("Destination is:",self.destination)
+print()
+print("====WELCOME TO IHUB FOR UNPICKING IN PYTHON=====")
+with open("ihub1.txt","rb") as f:
+    obj1=pickle.load(f)
+    obj1.m1()
+    print()
+    print("Data or information read succesfully  from the IHUB1.txt file ...")
+print()
+time.sleep(2)
+print("End of an application")
+
+    
+
+
+
+OUTPUT:
+======
+
+====WELCOME TO IHUB FOR UNPICKING IN PYTHON=====
+====Train_Information====
+Tno is: 12345
+Tname is: RE
+Arrtime is: 11:00 AM IST
+Depttime is: 12:00 PM IST
+Date is: 12/12/2023
+Source is: Hyderabad
+Destination is: Delhi
+
+Data or information read succesfully  from the IHUB1.txt file ...
+
+End of an application
+
+
+
+test1.py
+======
+import time 
+class Train_Information:
+    def __init__(self,tno,tname,arrtime,depttime,date,source,destination):
+        self.tno=tno 
+        self.tname=tname 
+        self.arrtime=arrtime
+        self.depttime=depttime 
+        self.date=date 
+        self.source=source 
+        self.destination=destination
+    def m1(self):
+        print("====Train_Information====")
+        print('Tno is:',self.tno)
+        print("Tname is:",self.tname)
+        print("Arrtime is:",self.arrtime)
+        print("Depttime is:",self.depttime)
+        print("Date is:",self.date)
+        print("Source is:",self.source)
+        print("Destination is:",self.destination)
+
+
+
+    
+
+test2.py:---->Pickling
+======================
+import time 
+import test1 
+import pickle 
+f1=open("ihub2.txt","wb")
+n=int(input("Enter the number of rows:"))
+for x1 in range(n):
+    tno=int(input('Enter the tno:'))
+    tname=input('Enter the tname:')
+    arrtime=input('Enter the arrtime:')
+    depttime=input('Enter the depttime:')
+    date=input("Enter the date:")
+    source=input("Enter the source:")
+    destination=input("Enter the destination:")
+    t1=test1.Train_Information(tno,tname,arrtime,depttime,date,source,destination)
+    pickle.dump(t1,f1)
+print()
+print("---Pickling is done---")
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+test3.py
+========
+import time 
+import pickle 
+import test1
+f1=open("ihub2.txt","rb")
+while(True):
+    try:
+        obj1=pickle.load(f1)
+        obj1.m1()
+    except EOFError as e:
+        print("Exception is:",e)
+        break 
+f1.close()
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Working CSV module:
+==================
+Python supports CSV module.It is a predefine module in python.The main objective of 
+CSV module is to store the data or information in CSV file or excel file.In python 
+we do have a module called csv module.Inside the csv module we do have following 
+methods
+
+->writer():It is used to write the data or information into a CSV file
+->reader():It is used to read the data or informatin into a CSV file
+->writerow():It is used to create and insert the data into a csv file.
+
+
+Ex1:
+===
+import time 
+import csv 
+with open("ihub1.csv","w",newline="") as f:
+    obj1=csv.writer(f)
+    obj1.writerow(["Eid","Ename","Esal","Design","Company"])
+    n=int(input('Enter the number of row:'))
+    for x1 in range(n):
+        Eid=int(input("Enter the Eid:"))
+        Ename=input("Enter the Ename:")
+        Esal=float(input("Enter the Esal:"))
+        Design=input("Enter the design:")
+        Company=input("Enter rhe company:")
+        obj1.writerow([Eid,Ename,Esal,Design,Company])
+    print()
+    print("A csv file is created successfully ...")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+import csv 
+f1=open("ihub1.csv","r")
+obj1=csv.reader(f1)
+print(obj1)
+print()
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+import csv 
+f1=open("ihub1.csv","r")
+obj1=csv.reader(f1)
+print()
+obj2=tuple(obj1)
+print(obj2)
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex4:
+====
+import time 
+import csv 
+f1=open("ihub1.csv","r")
+obj1=csv.reader(f1)
+print()
+obj2=tuple(obj1)
+for x1 in obj2:
+    for y1 in x1:
+        print(y1,end=" ")
+    print()
+f1.close()
+print()
+time.sleep(2)
+print("End of an application")
+================================================================================
+Exception handling in python:
+=============================
+In every programming language we do have types to errors
+
+->Syntax error
+->Runtime error(An expception)
+
+
+->Syntax error:
+==============
+Syntax error can be represent as if we are not following the rules of
+programming language then syntax error will be occured.
+
+
+
+Ex1:
+===
+import time 
+str1=input('Enter the string object')
+if(str1=="Hello")
+      print(str1,": It is a string object ...")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Runtime error:
+=============
+Runtime error is also known as an exception.An exception can be represent as
+unexpexted or unwanted events that disturb the flow of execution then it is said to 
+be runtime error or an exception.An expection can be occured by memory management and 
+by end_user
+
+
+What is An Exception?
+====================
+An exception is a class in python
+
+
+What is main objective of an exception:
+=====================================
+The main objective of an exception is provide gracefull termination or normal 
+termination.
+
+
+Ex1:
+===
+import time 
+print("1")
+print("2")
+print("3")
+print("4")
+print("5")
+print("6")
+print(1000//0)
+print("7")
+print("8")
+print("9")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+print("1")
+print("2")
+print("3')
+print("4")
+print("5")
+print("6")
+print(1000//0)
+print("7")
+print("8")
+print("9")
+print()
+time.sleep(2)
+print("End of an application")
+
+
+OUTPUT:
+======
+1
+2
+3
+4
+5
+6
+Traceback (most recent call last):
+  File "test1.py", line 8, in <module>
+    print(1000//0)
+ZeroDivisionError: integer division or modulo by zero
+
+
+Abnormal termination
+
+
+try and except block:
+=====================
+try is a keyword in python.The main objective of try block is to put 
+all risky code inside the try block or we can write application business
+login inside the try block
+
+except block:
+============
+except is a keyword in python.The main objective of except block 
+is to provide the gracefull ternimation or non graceful termination
+
+try:
+  ---
+except:
+  ---
+
+
+Ex1:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except BaseException as e:
+    print("The exception is:",e)
+print()
+time.sleep(2)
+print('End of an application ...')
+
+
+Ex2:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except Exception as e:
+    print("The exception is:",e)
+print()
+time.sleep(2)
+print('End of an application ...')
+
+
+Ex3:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except ArithmeticError as e:
+    print("The exception is:",e)
+print()
+time.sleep(2)
+print('End of an application ...')
+
+
+Ex4:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except ZeroDivisionError as e:
+    print(B,"Dear user only allow numer from [1-9]")
+print()
+time.sleep(2)
+print('End of an application ...')
+
+
+Can we use more than one except block with single try block in python:
+=====================================================================
+As per the application requirement we can use more than one except block
+with single try block as per the application requirement.
+
+
+try:
+ ---
+except:
+   ---
+except:
+   ---
+except:
+  ----
+
+
+Ex1:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except ArithmeticError:
+    print("Arithmetic Error ...")
+except ZeroDivisionError:
+    print("Zero division Error ...")
+except ValueError:
+    print("Value Error ...")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except ZeroDivisionError:
+    print("Zero division Error ...")
+except ArithmeticError:
+    print("Arithmetic Error ...")
+except ValueError:
+    print("Value Error ...")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Ex2:
+===
+import time 
+try:
+    A=int(input("Enter the value of A:"))
+    B=int(input("Enter the value of B:"))
+    res1=A//B 
+    print("The result is:",res1)
+except ZeroDivisionError:
+    print("Zero division Error ...")
+except ArithmeticError:
+    print("Arithmetic Error ...")
+except ValueError:
+    print("Value Error ...")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Working with default except block:
+=================================
+Python supports default except block.Default except can be represent as 
+if we are using except block with no exception classes then it is said to 
+default except block.Default except block must be placed in last position.
+
+
+import time 
+try:
+   A=int(input("Enter the value of A:"))
+   B=int(input("Enter the value of B:"))
+   res1=A//B 
+   print(res1)
+except:
+    print("Im a IHUB_ONE")
+except ArithemticError:
+     print("IM a IHUB_TWO")
+except ZeroDivsionError:
+    print("IM a IHUB_THREE")
+time.sleep(2)
+print("End of an application")
+
+#10
+#2
+
+
+Ex1:
+===
+import time 
+try:
+   A=int(input("Enter the value of A:"))
+   B=int(input("Enter the value of B:"))
+   res1=A//B 
+   print(res1)
+except:
+    print("Im a IHUB_ONE")
+except ArithemticError:
+     print("IM a IHUB_TWO")
+except ZeroDivsionError:
+    print("IM a IHUB_THREE")
+time.sleep(2)
+print("End of an application")
+
+
+Ex2:
+===
+import time 
+try:
+   A=int(input("Enter the value of A:"))
+   B=int(input("Enter the value of B:"))
+   res1=A//B 
+   print(res1)
+except ArithmeticError:
+     print("IM a IHUB_TWO")
+except ZeroDivisionError:
+    print("IM a IHUB_THREE")
+except:
+    print("Im a IHUB_ONE")
+time.sleep(2)
+print("End of an application")
+
+
+Ex3:
+===
+import time 
+try:
+   A=int(input("Enter the value of A:"))
+   B=int(input("Enter the value of B:"))
+   res1=A//B 
+   print(res1)
+except ZeroDivisionError:
+    print("IM a IHUB_THREE")
+except ArithmeticError:
+     print("IM a IHUB_TWO")
+except:
+    print("Im a IHUB_ONE")
+time.sleep(2)
+print("End of an application")
+
+OUTPUT:
+=====
+Enter the value of A:'1000'
+Value Error
+End of an application
+
+
+
+Ex4:
+===
+import time 
+try:
+   A=eval(input("Enter the value of A:"))
+   B=eval(input("Enter the value of B:"))
+   res1=A//B 
+   print(res1)
+except ZeroDivisionError:
+    print("IM a IHUB_THREE")
+except ArithmeticError:
+     print("IM a IHUB_TWO")
+except ValueError:
+    print("Value Error")
+time.sleep(2)
+print("End of an application")
+
+
+
+OUTPUT:
+======
+Enter the value of A:100
+Enter the value of B:5
+20
+End of an application
+
+C:\Users\Admin\Desktop>Python test1.py
+Enter the value of A:130
+Enter the value of B:ten
+Traceback (most recent call last):
+  File "test1.py", line 4, in <module>
+    B=eval(input("Enter the value of B:"))
+  File "<string>", line 1, in <module>
+NameError: name 'ten' is not defined
+
+C:\Users\Admin\Desktop>Python test1.py
+Enter the value of A:20
+Enter the value of B:'ten'
+Traceback (most recent call last):
+  File "test1.py", line 5, in <module>
+    res1=A//B
+TypeError: unsupported operand type(s) for //: 'int' and 'str'
+
+======================================================================================
+Decorators in python:
+====================
+Python supports decorators.In python decorator is a function which takes an
+input function and the output function with additional functionality without
+disturbing the existing function.@decorator_name
+
+
+Ex1:
+===
+import time 
+def Test_Case1(name):
+    print("Name of the language is:",name)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex2:
+===
+import time 
+def Test_Case2(func):
+    def inner(name):
+        if(name=="Python"):
+            print(name,":Meant for general purpose application")
+        else:
+            func(name)
+    return inner
+@Test_Case2
+def Test_Case1(name):
+    print("Name of the language is:",name)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+Ex3:
+===
+import time 
+def Test_Case2(Test_Case1):
+    def inner(name):
+        if(name=="Python"):
+            print(name,":Meant for general purpose application")
+        else:
+            Test_Case1(name)
+    return inner
+@Test_Case2
+def Test_Case1(name):
+    print("Name of the language is:",name)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex4:
+===
+import time 
+def Test_Case2(Test_Case1):
+    def inner(name):
+        if(name=="Python"):
+            print(name,":Meant for general purpose application")
+        elif(name=="SQL"):
+            print(name,":To write the querires for Oracle DB|MYSQL|MS SQL")
+        elif(name=="JavaScript"):
+            print(name,":Meant for client_side validation ...")
+        else:
+            Test_Case1(name)
+    return inner
+@Test_Case2
+def Test_Case1(name):
+    print("Name of the language is:",name)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+    print()
+    Test_Case1("SQL")
+    print()
+    Test_Case1("JavaScript")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex5:
+===
+import time 
+def Test_Case2(Test_Case1):
+    def inner(name):
+        if(name=="Python"):
+            print(name,":Meant for general purpose application")
+        elif(name=="sQL"):
+            print(name,":To write the querires for Oracle DB|MYSQL|MS SQL")
+        elif(name=="javaScript"):
+            print(name,":Meant for client_side validation ...")
+        else:
+            Test_Case1(name)
+    return inner
+@Test_Case2
+def Test_Case1(name):
+    print("Name of the language is:",name)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+    print()
+    Test_Case1("SQL")
+    print()
+    Test_Case1("JavaScript")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+Ex6:
+===
+import time 
+def Test_Case1(a,b):
+    return a//b 
+if(__name__=="__main__"):
+    print(Test_Case1(100,10))
+    print()
+    print(Test_Case1(120,12))
+    print()
+    print(Test_Case1(12000,0))
+    print()
+    print(Test_Case1(160,10))
+    print()
+    print(Test_Case1(1600,100))
+print()
+time.sleep(2)
+print("End of an  application")
+
+
+Ex7:
+===
+import time
+def Test_Case2(func):
+    def inner(a,b):
+        if(b==0):
+            print(b,"Dear students you are qualified with 99% then how can divide a number with zero")
+        else:
+            return func(a,b)
+    return inner
+@Test_Case2
+def Test_Case1(a,b):
+    return a//b 
+if(__name__=="__main__"):
+    print(Test_Case1(100,10))
+    print()
+    print(Test_Case1(120,12))
+    print()
+    print(Test_Case1(12000,0))
+    print()
+    print(Test_Case1(160,10))
+    print()
+    print(Test_Case1(1600,100))
+print()
+time.sleep(2)
+print("End of an  application")
+
+
+Ex8:
+===
+import time
+def Test_Case2(func):
+    def inner(a,b):
+        if(b==0):
+            print(b,"Dear students you are qualified with 99% then how can divide a number with zero")
+        else:
+             func(a,b)
+    return inner
+@Test_Case2
+def Test_Case1(a,b):
+    print(a//b) 
+if(__name__=="__main__"):
+    Test_Case1(100,10)
+    print()
+    Test_Case1(120,12)
+    print()
+    Test_Case1(12000,0)
+    print()
+    Test_Case1(160,10)
+    print()
+    Test_Case1(1600,100)
+print()
+time.sleep(2)
+print("End of an  application")
+
+
+Ex9:
+====
+import time 
+def Test_Case2(func):
+    def inner(name):
+        if(name=="Python"):
+            print(name,":Meant for Web based applications as well")
+        elif(name=="JS"):
+            print(name,"It is powerful scripting language")
+        else:
+            func(name)
+    return inner
+def Test_Case1(name):
+    print("Name  of the language is:",name)
+decorfunction=Test_Case2(Test_Case1)
+if(__name__=="__main__"):
+    Test_Case1("Python")
+    print()
+    decorfunction("Python")
+    print()
+    Test_Case1("JS")
+    print()
+    decorfunction("JS")
+print()
+time.sleep(2)
+print('End of an application')
+
+
+
+OUTPUT:
+======
+Name  of the language is: Python
+
+Python :Meant for Web based applications as well
+
+Name  of the language is: JS
+
+JS It is powerful scripting language
+
+End of an application
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+

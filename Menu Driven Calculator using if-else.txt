@@ -1,0 +1,146 @@
+# Menu Driven Calculator using if-else
+
+print("=== Menu Driven Calculator ===")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+print("5. Exit")
+
+while True:
+    choice = int(input("\nEnter your choice (1-5): "))
+
+    if choice == 5:
+        print("Exiting Calculator... Goodbye!")
+        break
+
+    # Taking inputs
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    if choice == 1:
+        print("Result =", num1 + num2)
+    elif choice == 2:
+        print("Result =", num1 - num2)
+    elif choice == 3:
+        print("Result =", num1 * num2)
+    elif choice == 4:
+        if num2 != 0:
+            print("Result =", num1 / num2)
+        else:
+            print("Error! Division by zero is not allowed.")
+    else:
+        print("Invalid choice! Please enter between 1-5.")
+=======================================================================================
+41. Next Day Calculator
+
+Write a Python program to get the next day of a given date.
+
+Sample Solution:
+
+Python Code:
+
+# Prompt the user to input a year and convert it to an integer, assigning it to the variable 'year'
+year = int(input("Input a year: "))
+
+# Determine if the input year is a leap year
+
+# Check if the year is divisible by 400
+if (year % 400 == 0):
+    leap_year = True
+# Check if the year is divisible by 100
+elif (year % 100 == 0):
+    leap_year = False
+# Check if the year is divisible by 4
+elif (year % 4 == 0):
+    leap_year = True
+else:
+    leap_year = False
+
+# Prompt the user to input a month in the range of 1-12 and convert it to an integer, assigning it to the variable 'month'
+month = int(input("Input a month [1-12]: "))
+
+# Determine the number of days in the specified month
+
+# Check for months with 31 days
+if month in (1, 3, 5, 7, 8, 10, 12):
+    month_length = 31
+# Check for February
+elif month == 2:
+    # Check for leap year and assign the appropriate number of days
+    if leap_year:
+        month_length = 29
+    else:
+        month_length = 28
+# For months with 30 days
+else:
+    month_length = 30
+
+# Prompt the user to input a day in the range of 1-31 and convert it to an integer, assigning it to the variable 'day'
+day = int(input("Input a day [1-31]: "))
+
+# Calculate the next date based on the provided day, month, and year
+
+# Check if the day is less than the total number of days in the month
+if day < month_length:
+    day += 1
+else:
+    day = 1
+    # Check if the current month is December
+    if month == 12:
+        month = 1
+        year += 1
+    else:
+        month += 1
+
+# Display the next date in the format [yyyy-mm-dd] based on the updated day, month, and year
+print("The next date is [yyyy-mm-dd] %d-%d-%d." % (year, month, day))
+===========================================================================================
+2. Temperature Converter
+
+Write a Python program to convert temperatures to and from Celsius and Fahrenheit.
+
+Python: Centigrade and Fahrenheit Temperatures :
+
+The centigrade scale, which is also called the Celsius scale, was developed by Swedish astronomer Andres Celsius. In the centigrade scale, water freezes at 0 degrees and boils at 100 degrees. The centigrade to Fahrenheit conversion formula is:
+
+Fahrenheit and centigrade are two temperature scales in use today. The Fahrenheit scale was developed by the German physicist Daniel Gabriel Fahrenheit . In the Fahrenheit scale, water freezes at 32 degrees and boils at 212 degrees.
+
+C = (5/9) * (F - 32)
+where F is the Fahrenheit temperature. You can also use this Web page to convert Fahrenheit temperatures to centigrade. Just enter a Fahrenheit temperature in the text box below, then click on the Convert button.
+
+Python: centigrade to fahrenheit
+Sample Solution:
+
+Python Code:
+
+# Prompt the user to input a temperature in the format (e.g., 45F, 102C, etc.)
+temp = input("Input the temperature you like to convert? (e.g., 45F, 102C etc.) : ")
+
+# Extract the numerical part of the temperature and convert it to an integer
+degree = int(temp[:-1])
+
+# Extract the convention part of the temperature input (either 'C' or 'F')
+i_convention = temp[-1]
+
+# Check if the input convention is in uppercase 'C' (Celsius)
+if i_convention.upper() == "C":
+    # Convert the Celsius temperature to Fahrenheit
+    result = int(round((9 * degree) / 5 + 32))
+    o_convention = "Fahrenheit"  # Set the output convention as Fahrenheit
+# Check if the input convention is in uppercase 'F' (Fahrenheit)
+elif i_convention.upper() == "F":
+    # Convert the Fahrenheit temperature to Celsius
+    result = int(round((degree - 32) * 5 / 9))
+    o_convention = "Celsius"  # Set the output convention as Celsius
+else:
+    # If the input convention is neither 'C' nor 'F', print an error message and exit the program
+    print("Input proper convention.")
+    quit()
+
+# Display the converted temperature in the specified output convention
+print("The temperature in", o_convention, "is", result, "degrees.") 
+==============================================================================================
+
+
+
